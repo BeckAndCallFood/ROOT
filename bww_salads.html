@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html<input name="onside1" type="checkbox" value="" />
+<title>BWW Salads</title>
+<style type="text/css">
+a.tip {
+  position: relative;
+  text-decoration: none;
+}
+a.tip:hover:after {
+  position: absolute;
+  display: block;
+  content: "";  
+  border-color: rgba(0,0,0,.8) transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  height:0;
+  width:0;
+  position:absolute;
+  top: -8px;
+  left:1em;
+}
+div#container {
+    position: relative;
+    margin: 0 auto;
+	height: 610px;
+	max-width: 1200px;
+}
+</style>
+<script type="text/javascript">
+function check1()
+{
+if(document.getElementById('salads_0').checked){ 
+alert("Select a dressing"); }
+}
+function check2() 
+{
+if(document.getElementById('salads_1').checked){ 
+alert("Select a dressing");} }
+function check3() {
+if(document.getElementById('salads_2').checked){ 
+alert("Select without chicken / Grilled chicken option and a dressing"); }}
+function check4() { 
+if(document.getElementById('salads_5').checked){ 
+alert("Select a dressing"); }}
+function check5() {
+if(document.getElementById('salads_6').checked){ 
+alert("Select a dressing"); }
+}
+function check6() {
+if(document.getElementById('salads_7').checked){ 
+alert("Select a dressing"); }
+}
+</script>
+</head>
+
+<body>
+<div id="container">
+<h2 align="center"><font color="red">Choose from Savory Salads</font></h2>
+<p>&nbsp;</p>
+<form id="form1" name="form1" method=GET action="bww/bwwController">
+  <p>
+      <input type="checkbox" name="salads1" value="bbq" id="salads_0" onClick="check1()"/>
+      <a href="#" class="tip" title="Fresh greens, pico de gallo, a blend of cheeses, grilled chicken and BBQ ranch dressing garnished with our signature Honey BBQ™ sauce.">
+	  <font color="red"><b>Honey BBQ Chicken Salad</b></font></a> <br />
+    Dressings : 
+    <label for="dressing1"></label>
+    <select name="dressing1" size="1" id="dressing1" >
+      <option value="select">select</option>
+      <option value="Bleu Cheese">Bleu Cheese</option>
+      <option value="Honey Mustard">Honey Mustard</option>
+      <option value="Ranch">Ranch</option>
+      <option value="Southwestern Ranch">Southwestern Ranch</option>
+      <option value="Fat-Free Ranch Light Asian Sesame">Fat-Free Ranch Light Asian Sesame</option>
+      <option value="Light French">Light French</option>
+      <option value="Light Balsamic">Light Balsamic</option>
+      <option value="Ligh Caesar">Light Caesar</option>
+    </select>
+<br />
+    <input type="checkbox" name="onside1" id="onside1"/>
+    <label for="onside1"></label>
+  Dressing on side</p>
+  <p><br />
+      <input type="checkbox" name="salads2" value="caesar" id="salads_1" onClick="check2()"/>
+       <a href="#" class="tip" title="Grilled chicken tossed in our signature Parmesan Garlic™ Sauce, served on a bed of fresh romaine and topped with Parmesan cheese and croutons. Served with light Caesar dressing.">
+	   <font color="red"><b>Chicken Caesar Salad</b></font></a> <br />
+    Dressings :
+    <label for="dressing2"></label>
+    <select name="dressing2" size="1" id="dressing2">
+      <option value="select">select</option>
+      <option value="Bleu Cheese">Bleu Cheese</option>
+      <option value="Honey Mustard">Honey Mustard</option>
+      <option value="Ranch">Ranch</option>
+      <option value="Southwestern Ranch">Southwestern Ranch</option>
+      <option value="Fat-Free Ranch Light Asian Sesame">Fat-Free Ranch Light Asian Sesame</option>
+      <option value="Light French">Light French</option>
+      <option value="Light Balsamic">Light Balsamic</option>
+      <option value="Light Caesar">Light Caesar</option>
+    </select>
+<br />
+    <input type="checkbox" name="onside2" id="onside2"/>
+    <label for="onside2"></label>
+Dressing on side</p>
+  <p><br />
+    <label>
+      <input type="checkbox" name="salads3" value="grilled" id="salads_2" onClick="check3()"/>
+      <a href="#" class="tip" title="Seasoned, grilled chicken served over fresh greens with tomatoes, cucumbers, carrots, onions, a blend of cheese and croutons. Also available with blackened chicken or without chicken.">
+	  <font color="red"><b>Grlled Chicken Salad</b></font></a> <br />
+      <input type="radio" name="salads4" value="Without chicken" id="salads_3" />
+      without chicken</label>
+    <label>
+      <input type="radio" name="salads4" value="Blackened" id="salads_3"/>
+      Blackened</label>
+    <br />Dressings :
+    <label for="dressing3"></label>
+    <select name="dressing3" size="1" id="dressing3">
+      <option value="select">select</option>
+      <option value="Bleu Cheese">Bleu Cheese</option>
+      <option value="Honey Mustard">Honey Mustard</option>
+      <option value="Ranch">Ranch</option>
+      <option value="Southwestern Ranch">Southwestern Ranch</option>
+      <option value="Fat-Free Ranch Light Asian Sesame">Fat-Free Ranch Light Asian Sesame</option>
+      <option value="Light French">Light French</option>
+      <option value="Light Balsamic">Light Balsamic</option>
+      <option value="Light Caesar">Light Caesar</option>
+    </select>
+  <br />
+    <input type="checkbox" name="onside3" id="onside3"/>
+    <label for="onside3"></label>
+Dressing on side</p>
+  <p><br />
+    <label>
+      <input type="checkbox" name="salads6" value="asian" id="salads_5" onClick="check4()"/>
+     <a href="#" class="tip" title="Crisp greens and cabbage topped with grilled chicken tossed in our signature Asian Zing® sauce garnished with mandarin oranges and fried wontons. Served with light Asian Sesame dressing.">
+	 <font color="red"><b>Asian Zing Chicken Salad</b></font></a> <br />
+	Dressings :
+    <label for="dressing4"></label>
+    <select name="dressing4" size="1" id="dressing4">
+      <option value="select">select</option>
+      <option value="Bleu Cheese">Bleu Cheese</option>
+      <option value="Honey Mustard">Honey Mustard</option>
+      <option value="Ranch">Ranch</option>
+      <option value="Southwestern Ranch">Southwestern Ranch</option>
+      <option value="Fat-Free Ranch Light Asian Sesame">Fat-Free Ranch Light Asian Sesame</option>
+      <option value="Light French">Light French</option>
+      <option value="Light Balsamic">Light Balsamic</option>
+      <option value="Light Caesar">Light Caesar</option>
+    </select>
+  <br />
+    <input type="checkbox" name="onside4" id="onside4"/>
+    <label for="onside4"></label>
+Dressing on side</p>
+  <p><br />
+    <label>
+      <input type="checkbox" name="salads7" value="tender" id="salads_6" onClick="check5()"/>
+      <a href="#" class="tip" title="Crispy chicken Buffalo Tenders™, spun in your favorite BUFFALO WILD WINGS® sauce, served over a bed of fresh greens, with tomatoes, cucumbers, carrots, onions, a blend of cheeses and croutons.">
+	  <font color="red"><b>Chicken Tender Salad</b></font></a> <br />
+	Dressings :
+    <label for="dressing5"></label>
+    <select name="dressing5" size="1" id="dressing5" >
+      <option value="select">select</option>
+      <option value="Bleu Cheese">Bleu Cheese</option>
+      <option value="Honey Mustard">Honey Mustard</option>
+      <option value="Ranch">Ranch</option>
+      <option value="Southwestern Ranch">Southwestern Ranch</option>
+      <option value="Fat-Free Ranch Light Asian Sesame">Fat-Free Ranch Light Asian Sesame</option>
+      <option value="Ligh French">Light French</option>
+      <option value="Light Balsamic">Light Balsamic</option>
+      <option value="Light Caesar">Light Caesar</option>
+    </select>
+  <br />
+  <input type="checkbox" name="onside5" id="onside5"/>
+    <label for="onside5"></label>
+Dressing on side  
+  <p><br />
+   <label>
+      <input type="checkbox" name="salads9" value="chop" id="salads_8" onClick="check7()"/>
+      <a href="#" class="tip" title="Fresh greens topped with chicken tossed in our signature Honey BBQ sauce, crumbled blue cheese, dried cranberries, sugared walnuts, bacon and served with light balsamic dressing.">
+	  <font color="red"><b>Chicken Chop Salad</b></font></a> <br />
+	  Dressings :
+    <label for="dressing7"></label>
+    <select name="dressing7" size="1" id="dressing7">
+      <option value="select">select</option>
+      <option value="Bleu Cheese">Bleu Cheese</option>
+      <option value="Honey Mustard">Honey Mustard</option>
+      <option value="Ranch">Ranch</option>
+      <option value="Southwestern Ranch">Southwestern Ranch</option>
+      <option value="Fat-Free Ranch Light Asian Sesame">Fat-Free Ranch Light Asian Sesame</option>
+      <option value="Light French">Light French</option>
+      <option value="Light Balsamic">Light Balsamic</option>
+      <option value="Light Caesar">Light Caesar</option>
+    </select>
+<br />
+    <input type="checkbox" name="onside7" id="onside7"/>
+    <label for="onside7"></label>
+Dressing on side</p>
+    <p>
+	<label>
+      <input type="checkbox" name="salads8" value="side" id="salads_7" onClick="check6()"/>
+      <font color="red"><b>Side Salad</b></font></label>
+    <br />Dressings :
+    <label for="dressing6"></label>
+    <select name="dressing6" size="1" id="dressing6">
+      <option value="select">select</option>
+      <option value="Bleu Cheese">Bleu Cheese</option>
+      <option value="Honey Mustard">Honey Mustard</option>
+      <option value="Ranch">Ranch</option>
+      <option value="Southwestern Ranch">Southwestern Ranch</option>
+      <option value="Fat-Free Ranch Light Asian Sesame">Fat-Free Ranch Light Asian Sesame</option>
+      <option value="Light French">Light French</option>
+      <option value="Light Balsamic">Light Balsamic</option>
+      <option value="Light Caesar">Light Caesar</option>
+    </select>
+<br />
+    <input type="checkbox" name="onside6" id="onside6"/>
+    <label for="onside6"></label>
+Dressing on side</p>
+<p></p>
+	  <input type="hidden" name="action" value="addSalads">
+      <input  STYLE="color: #FDD017; background-color:  #FF2400;" type="submit" name="add" id="button" value="Add to Bag" />
+	  <p><a href="bww_order.html" title="Back to main Menu">Back to main menu</a></p>
+    </p>
+</form>
+<p>&nbsp;</p>
+</body>
+</div>
+</html>

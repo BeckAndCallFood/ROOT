@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style rel='stylesheet' type='text/css'>
+div#container {
+    position: relative;
+    margin: 0 auto;
+	height: 610px;
+	max-width: 1200px;
+}
+</style>
+<title>BWW Combo</title>
+</head>
+
+<body>
+<div id="container">
+<h2 align="center"><font color="red">BWW Combo</font></h2>
+<p>5 Traditonal &amp; 7 Boneless Wings </p>
+<form id="form1" name="form1" method=GET action="bww/bwwController">
+  <p>
+    <input type="checkbox" name="subcheck" id="subcheck" />
+    <label for="sub"></label> 
+    Substitute Fries with : &nbsp; &nbsp;
+    <label for="sub"></label>
+    <select name="sub" size="1" id="sub">
+      <option value="select">select</option>
+      <option value="Onion Rings">Onion Rings</option>
+      <option value="Side Salad">Side Salad</option>
+      <option value="ColeSlaw">ColeSlaw</option>
+      <option value="Veggie Boat">Veggie Boat</option>
+      <option value="Buffalo Chips">Buffalo Chips</option>
+      <option value="Potato Wedges">Potato Wedges</option>
+    </select>
+  </p>
+  <p>&nbsp;</p>
+  <p>
+   <input type="hidden" name="action" value="addCombo">
+    <input STYLE="color: #FDD017; background-color:  #FF2400;" type="submit" name="add" id="add" value="Add to Bag" />
+  </p>
+    <p><a href="bww_order.html" title="Back to main Menu">Back to main menu</a></p>
+</form>
+<p>&nbsp;</p>
+</body>
+</div>
+</html>

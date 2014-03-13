@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style rel='stylesheet' type='text/css'>
+div#container {
+    position: relative;
+    margin: 0 auto;
+	height: 610px;
+	max-width: 1200px;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Chipotle Admin page</title>
+</head>
+
+<body>
+<div id="container">
+<p><h3><font color="red"><b>Chipotle Menu Admin Page</b></font></h3></p>
+<p><strong><em>Select any item, whose price needs to be changed, fromt the drop down list.</em></strong></p>
+<p><em><strong>Enter the new price in the box given.</strong></em><strong></strong></p>
+<p>&nbsp;</p>
+
+<p><strong>Fillings: </strong></p>
+<form id="form1" name="form1" method="post" action="chip_admin.jsp">
+  <p>
+    <label for="fillings"></label>
+    <select name="fillings" size="1" id="fillings">
+	  <option value="select">Select </option>
+      <option value="chicken">Chicken </option>
+      <option value="steak">Steak</option>
+      <option value="barbacoa">Barbacoa</option>
+      <option value="carnitas">Carnitas</option>
+      <option value="veggie">Veggie</option>
+      <option value="chciken_extra">Extra chicken filling</option>
+      <option value="steak_extra">Extra Steak filling</option>
+      <option value="carnitas_extra">Extra Carnitas filling</option>
+      <option value="barbacoa_extra">Extra Barbacoa filling</option>
+    </select>
+  </p>
+  <p>Enter new Price : 
+    <label for="price"></label>
+    <input type="text" name="price1" id="price1" />
+  </p>
+<p><strong>Tacos : </strong></p>
+  <p>
+    <label for="taco"></label>
+    <select name="tacos" size="1" id="tacos">
+	<option value="select">Select </option>
+      <option value="taco_1">1</option>
+      <option value="taco_2">2</option>
+      <option value="taco_3">3</option>
+    </select>
+  </p>
+  <p>Enter new Price :
+    <label for="price"></label>
+    <input type="text" name="price2" id="price2" />
+  </p>
+<p><strong>Sides :</strong></p>
+  <p>
+    <label for="sides"></label>
+    <select name="sides" size="1" id="sides">
+	<option value="select">Select </option>
+      <option value="guacamole">Guacamole</option>
+      <option value="chips">Chips</option>
+      <option value="chips_guacamole">Chips &amp; Guacamole</option>
+      <option value="chips_fresh_tomato_salsa">Chips &amp; Fresh tomato salsa sauce</option>
+      <option value="chips_roasted_chili_corn_salsa">Chips &amp; Roasted chili corn salsa</option>
+      <option value="chips_tomato_green_chili_salsa">Chips &amp; Tomatilo green chili salsa</option>
+      <option value="chips_tomato_red_chili_salsa">Chips &amp; Tomatilo red chili salsa</option>
+    </select>
+  </p>
+  <p>Enter new Price :
+    <label for="price"></label>
+    <input type="text" name="price3" id="price3" />
+  </p>
+<p><strong>Drinks : </strong></p>
+  <p>
+    <label for="drinks"></label>
+    <select name="drinks" size="1" id="drinks">
+	<option value="select">Select </option>
+      <option value="water">Bottled water</option>
+      <option value="nectar">Nantucket nectar</option>
+      <option value="izze">Izze</option>
+    </select>
+  </p>
+  <p>Enter new Price :
+    <label for="price"></label>
+    <input type="text" name="price4" id="price4" />
+  </p>
+    <p>
+    <input type="submit" name="submit" id="submit" value="Submit" />
+  </p>
+ </form>
+<p>&nbsp;</p>
+</div>
+</body>
+</html>

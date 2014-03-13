@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style rel='stylesheet' type='text/css'>
+div#container {
+    position: relative;
+    margin: 0 auto;
+	height: 610px;
+	max-width: 1200px;
+}
+</style>
+<title>BWW Sandwiches</title>
+<script type="text/javascript">
+
+function check1()
+{
+if(document.getElementById('sandwiches_0').checked)
+	 {
+	  alert("Please select a sauce and any no. of toppings");
+	 }
+}
+function check2() {
+if(document.getElementById('sandwiches_1').checked)
+	 {
+	  alert("Please select a sauce and any no. of toppings");
+	 }
+}
+function check3() {
+if(document.getElementById('sandwiches_2').checked)
+	 {
+	  alert("Please select a sauce and any no. of toppings");
+	 }
+}
+function check4() {
+if(document.getElementById('sandwiches_3').checked)
+	 {
+	  alert("Please select Crispy / Grlled type. Select a sauce and any no. of toppings");
+	 }
+}
+</script>
+</head>
+
+<body>
+<div id="container">
+<h2 align="center"><font color="red">Choose from Sandwiches</font></h2><br><br>
+<font color="red">(Served with French Fries)</font><p>
+
+<form id="form1" name="sandwichForm" method=GET onSubmit="return ValidateForm(sandwichForm)" action="bww/bwwController">
+    <label>
+      <input type="checkbox" name="sandwiches0" value="ranch" id="sandwiches_0" onClick="check1()"/>
+      <font color="red"><b>Buffalo Ranch Chicken</b></font></label>
+    <br>Sauce : 
+<label for="sauce1"></label>
+      <select name="sauce1" size="1" id="sauce1">
+      <option value="select">Select</option>
+	  <option value="No sauce">No sauce</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild">Mild</option>
+        <option value="Parmesan Garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+        <option value="Asian Zing">Asian Zing Zing</option>
+        <option value="Carribean Jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai Curry">Thai Curry </option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero </option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select> 
+	  	<br> Toppings:<br>
+      <input type="checkbox" name="topping11" value="American" id="burger_toppings_0" />
+      American</label>
+    <label>
+      <input type="checkbox" name="topping12" value="Cheddar" id="burger_toppings_1" />
+      Cheddar</label>
+    <label>
+      <input type="checkbox" name="topping13" value="Pepper Jack" id="burger_toppings_2" />
+      Pepper Jack</label>
+    <label>
+      <input type="checkbox" name="topping14" value="Swiss" id="burger_toppings_3" />
+      Swiss</label>
+    <label>
+      <input type="checkbox" name="topping15" value="Queso" id="burger_toppings_4" />
+      Queso</label>
+
+    <label>
+      <input type="checkbox" name="Topping16" value="Lettuce" id="burger_toppings_5" />
+      Lettuce</label>
+    <label>
+      <input type="checkbox" name="Topping17" value="Tomato" id="burger_toppings_6" />
+      Tomato</label>
+    <label>
+      <input type="checkbox" name="Topping18" value="Onion" id="burger_toppings_7" />
+      Onion</label>
+    <label>
+      <input type="checkbox" name="Topping19" value="Jammin Jalapeno" id="burger_toppings_8" />
+      Jammin Jalapeno</label>
+    <label>
+      <input type="checkbox" name="Topping110" value="Pico" id="burger_toppings_9" />
+      Pico</label>
+ <br>
+    <label>
+      <input type="checkbox" name="Topping111" value="Pickles" id="burger_toppings_10" />
+      Pickles</label>
+    <label>
+      <input type="checkbox" name="Topping112" value="Baccon" id="burger_toppings_11" />
+      Baccon ($0.50)</label>
+    <label>
+      <input type="checkbox" name="Topping113" value="Chili" id="burger_toppings_12" />
+      Chili ($0.50)</label>
+    <label>
+      <input type="checkbox" name="Topping114" value="Pork" id="burger_toppings_13" />
+      Pork ($1.25)</label>
+    <label>
+      <input type="checkbox" name="Topping115" value="Steak" id="burger_toppings_14" />
+      Steak ($1.25)</label>
+    <br /></p>
+    <label>
+      <input type="checkbox" name="sandwiches1" value="jerk" id="sandwiches_1" onClick="check2()"/>
+      <font color="red"><b>Jerk Chicken</b></font></label><br>Sauce : 
+<label for="sauce2"></label>
+      <select name="sauce2" size="1" id="sauce2">
+      <option value="select">Select</option>
+	    <option value="No sauce">No sauce</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild">Mild</option>
+        <option value="Parmesan Garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+        <option value="Asian Zing">Asian Zing Zing</option>
+        <option value="Carribean Jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai Curry">Thai Curry</option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero </option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select> <br> Toppings:<br>
+      <input type="checkbox" name="topping21" value="American" id="burger_toppings_0" />
+      American</label>
+    <label>
+      <input type="checkbox" name="topping22" value="Cheddar" id="burger_toppings_1" />
+      Cheddar</label>
+    <label>
+      <input type="checkbox" name="topping23" value="Pepper Jack" id="burger_toppings_2" />
+      Pepper Jack</label>
+    <label>
+      <input type="checkbox" name="topping24" value="Swiss" id="burger_toppings_3" />
+      Swiss</label>
+    <label>
+      <input type="checkbox" name="topping25" value="Queso" id="burger_toppings_4" />
+      Queso</label>
+
+    <label>
+      <input type="checkbox" name="Topping26" value="Lettuce" id="burger_toppings_5" />
+      Lettuce</label>
+    <label>
+      <input type="checkbox" name="Topping27" value="Tomato" id="burger_toppings_6" />
+      Tomato</label>
+    <label>
+      <input type="checkbox" name="Topping28" value="Onion" id="burger_toppings_7" />
+      Onion</label>
+    <label>
+      <input type="checkbox" name="Topping29" value="Jammin Jalapeno" id="burger_toppings_8" />
+      Jammin Jalapeno</label>
+    <label>
+      <input type="checkbox" name="Topping210" value="Pico" id="burger_toppings_9" />
+      Pico</label>
+ <br>
+    <label>
+      <input type="checkbox" name="Topping211" value="Pickles" id="burger_toppings_10" />
+      Pickles</label>
+    <label>
+      <input type="checkbox" name="Topping212" value="Baccon" id="burger_toppings_11" />
+      Baccon ($0.50)</label>
+    <label>
+      <input type="checkbox" name="Topping213" value="Chili" id="burger_toppings_12" />
+      Chili ($0.50)</label>
+    <label>
+      <input type="checkbox" name="Topping214" value="Pork" id="burger_toppings_13" />
+      Pork ($1.25)</label>
+    <label>
+      <input type="checkbox" name="Topping215" value="Steak" id="burger_toppings_14" />
+      Steak ($1.25)</label>
+    <br />
+  </p>
+    <label>
+      <input type="checkbox" name="sandwiches2" value="pork" id="sandwiches_2" onClick="check3()"/>
+      <font color="red"><b>Pulled Pork</b></font></label><br>
+    Sauce : 
+<label for="sauce3"></label>
+      <select name="sauce3" size="1" id="sauce3">
+      <option value="select">Select</option>
+	    <option value="No sauce">No sauce</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild">Mild</option>
+        <option value="Parmesan Garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+        <option value="Asian Zing">Asian Zing Zing</option>
+        <option value="Carribean Jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai Curry">Thai Curry</option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero </option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select> 
+	  <br> Toppings:<br>
+      <input type="checkbox" name="topping31" value="American" id="burger_toppings_0" />
+      American</label>
+    <label>
+      <input type="checkbox" name="topping32" value="Cheddar" id="burger_toppings_1" />
+      Cheddar</label>
+    <label>
+      <input type="checkbox" name="topping33" value="Pepper Jack" id="burger_toppings_2" />
+      Pepper Jack</label>
+    <label>
+      <input type="checkbox" name="topping34" value="Swiss" id="burger_toppings_3" />
+      Swiss</label>
+    <label>
+      <input type="checkbox" name="topping35" value="Queso" id="burger_toppings_4" />
+      Queso</label>
+
+    <label>
+      <input type="checkbox" name="Topping36" value="Lettuce" id="burger_toppings_5" />
+      Lettuce</label>
+    <label>
+      <input type="checkbox" name="Topping37" value="Tomato" id="burger_toppings_6" />
+      Tomato</label>
+    <label>
+      <input type="checkbox" name="Topping38" value="Onion" id="burger_toppings_7" />
+      Onion</label>
+    <label>
+      <input type="checkbox" name="Topping39" value="Jammin Jalapeno" id="burger_toppings_8" />
+      Jammin Jalapeno</label>
+    <label>
+      <input type="checkbox" name="Topping310" value="Pico" id="burger_toppings_9" />
+      Pico</label>
+ <br>
+    <label>
+      <input type="checkbox" name="Topping311" value="Pickles" id="burger_toppings_10" />
+      Pickles</label>
+    <label>
+      <input type="checkbox" name="Topping312" value="Baccon" id="burger_toppings_11" />
+      Baccon ($0.50)</label>
+    <label>
+      <input type="checkbox" name="Topping313" value="Chili" id="burger_toppings_12" />
+      Chili ($0.50)</label>
+    <label>
+      <input type="checkbox" name="Topping314" value="Pork" id="burger_toppings_13" />
+      Pork ($1.25)</label>
+    <label>
+      <input type="checkbox" name="Topping315" value="Steak" id="burger_toppings_14" />
+      Steak ($1.25)</label>
+    <br />
+  </p>
+    <label>
+      <input type="checkbox" name="sandwiches3" value="chicken" id="sandwiches_3" onClick="check4()"/>
+       <font color="red"><b>Chicken</b></font></label>
+    <br />
+    <label>
+      <input type="radio" name="chk" value="Crispy" id="s4" />
+     Crispy</label>
+    <label>
+      <input type="radio" name="chk" value="Grilled" id="s5" />
+      Grilled</label>
+  <br>
+ Sauce : 
+<label for="sauce4"></label>
+      <select name="sauce4" size="1" id="sauce4">
+      <option value="select">Select</option>
+	    <option value="No sauce">No sauce</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild">Mild</option>
+        <option value="Parmesan Garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+        <option value="Asian Zing">Asian Zing Zing</option>
+        <option value="Carribean Jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai Curry">Thai Curry</option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero</option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select> 
+     <label>
+	<br> Toppings:<br>
+      <input type="checkbox" name="topping41" value="American" id="burger_toppings_0" />
+      American</label>
+    <label>
+      <input type="checkbox" name="topping42" value="Cheddar" id="burger_toppings_1" />
+      Cheddar</label>
+    <label>
+      <input type="checkbox" name="topping43" value="Pepper Jack" id="burger_toppings_2" />
+      Pepper Jack</label>
+    <label>
+      <input type="checkbox" name="topping44" value="Swiss" id="burger_toppings_3" />
+      Swiss</label>
+    <label>
+      <input type="checkbox" name="topping45" value="Queso" id="burger_toppings_4" />
+      Queso</label>
+
+    <label>
+      <input type="checkbox" name="Topping46" value="Lettuce" id="burger_toppings_5" />
+      Lettuce</label>
+    <label>
+      <input type="checkbox" name="Topping47" value="Tomato" id="burger_toppings_6" />
+      Tomato</label>
+    <label>
+      <input type="checkbox" name="Topping48" value="Onion" id="burger_toppings_7" />
+      Onion</label>
+    <label>
+      <input type="checkbox" name="Topping49" value="Jammin Jalapeno" id="burger_toppings_8" />
+      Jammin Jalapeno</label>
+    <label>
+      <input type="checkbox" name="Topping410" value="Pico" id="burger_toppings_9" />
+      Pico</label>
+ <br>
+    <label>
+      <input type="checkbox" name="Topping411" value="Pickles" id="burger_toppings_10" />
+      Pickles</label>
+    <label>
+      <input type="checkbox" name="Topping412" value="Baccon" id="burger_toppings_11" />
+      Baccon ($0.50)</label>
+    <label>
+      <input type="checkbox" name="Topping413" value="Chili" id="burger_toppings_12" />
+      Chili ($0.50)</label>
+    <label>
+      <input type="checkbox" name="Topping414" value="Pork" id="burger_toppings_13" />
+      Pork ($1.25)</label>
+    <label>
+      <input type="checkbox" name="Topping415" value="Steak" id="burger_toppings_14" />
+      Steak ($1.25)</label>
+    <br />
+  </p>
+  <p>&nbsp;</p>
+  <p>
+    <input type="hidden" name="action" value="addSandwiches">
+    <input  STYLE="color: #FDD017; background-color:  #FF2400;" type="submit" name="add" id="button" value="Add to Bag" />
+  </p>
+  <p><a href="bww_order.html" title="Back to main Menu">Back to main menu</a></p>
+  <p><br />
+  </p>
+</form>
+</body>
+</div>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style rel='stylesheet' type='text/css'>
+div#container {
+    position: relative;
+    margin: 0 auto;
+	height: 610px;
+	max-width: 1200px;
+}
+</style>
+<script language="javascript">
+function ValidateForm(Form)
+	{
+	   var s1 = document.getElementById('quantity');
+       var s1v = s1.options[s1.selectedIndex].value;
+	  function countSelections(buttonGrp)
+	  {
+	    for(i=0; i<buttonGrp.length; i++)
+		{
+		  if(buttonGrp[i].checked) 
+		     return true;
+		}
+		return false;
+	  }
+	  
+	  if(!countSelections(hands.hand_sauce) && s1v!='select')
+	  {
+	    alert("Please select Sauce / Seasoing / No sauce seasoning option ");
+		return false;
+	  }
+	  
+	  return true;
+	}
+</script> 
+<title>BWW Hand Spun Wings</title>
+</head>
+
+<body>
+<div id="container">
+<h2 align="center"><font color="red">Choose from hand-Spun Wings</font></h2>
+<font color="red"><b>Quantity : </b></font>&nbsp;
+<form id="hand" name="hands" value="hand" method=GET onSubmit="return ValidateForm(hands)" action="bww/bwwController">
+    <label for="quantity"></label>
+    <select name="quantity" size="1" id="quantity">
+      <option value="select">select</option>
+      <option value="5">5 Wings </option>
+      <option value="10">10 Wings </option>
+      <option value="15">15 Wings </option>
+      <option value="20">20 Wings </option>
+      <option value="25">25 Wings </option>
+      <option value="50">50 Wings </option>
+      
+    </select>
+  </p>
+  <p>
+    <label>
+      <input type="radio" name="hand_sauce" value="sauce" id="hand_sauce_0" />
+      <font color="red">Sauce</font></label>
+    <label>
+       : &nbsp; <label for="sauce"></label>
+      <select name="sauce" size="1" id="sauce">
+      <option value="select">Select</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild">Mild</option>
+        <option value="Parmesan garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jammin Jalapeno"> Jammin Jalapeno</option>
+        <option value="Asian Zing">Asian Zing</option>
+        <option value="Carribean jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai Curry">Thai Curry</option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero</option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select>&nbsp; &nbsp;
+       <input type="radio" name="hand_sauce" value="seasoning" id="hand_sauce_1" />
+      <font color="red">Seasoning : </font>&nbsp; <label for="seasoning"></label>
+      <select name="seasoning" size="1" id="seasoning">
+        <option value="Salt & vinegar">Salt &amp; Vinegar</option>
+        <option value="Lemon Pepper">Lemon Pepper</option>
+        <option value="Buffalo">Buffalo</option>
+        <option value="Chipotle BBQ">Chipotle BBQ</option>
+        <option value="Dessert Heat">Dessert Heat</option>
+      </select></label>
+    <label>&nbsp; &nbsp;
+      <input type="radio" name="hand_sauce" value="none" id="hand_sauce_2" />
+      <font color="red">No sauce / seasoning</font></label>
+  </p>
+  <p>
+    <input type="checkbox" name="onside" id="onside" />
+    <label for="onside"></label>
+  Sauce on side </p>
+  <p>
+    <label>
+      <input type="radio" name="radio" value="Bleu Cheeese" id="option_0" />
+      Bleu Cheese</label>
+    <label>
+      <input type="radio" name="radio" value="Ranch" id="option_1" />
+      Ranch</label>
+    <label>
+      <input type="radio" name="radio" value="Both" id="option_2" />
+      Both</label>
+  ($0.60)</p>
+  <p>(On Tues. &amp; Thurs., $0.60 for each and $1.20 for both)</p>
+  <p>
+    <input type="checkbox" name="carrots_celery" id="carrots_celery" />
+    <label for="carrots_celery"></label>
+    Carrots &amp; Celery ( On Tue and Thu $0.60)<br />
+  </p>
+  <p>
+    <input type="checkbox" name="sideof" id="sideof" />
+    <label for="sideof"></label>
+    Side of Sauce ($0.60) : &nbsp;<select name="sidesauce" size="1" id="sidesauce">
+      <option value="select">Select</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild">Mild</option>
+        <option value="Parmesan garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+        <option value="Asian Zing">Asian Zing</option>
+        <option value="Carribean jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai Curry">Thai Curry</option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero</option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select>
+  </p>
+  <p>
+  <input type="hidden" name="form" value="hand">
+   <input type="hidden" name="action" value="addWings">
+    <input STYLE="color: #FDD017; background-color:  #FF2400;" type="submit" name="addBag" id="addBag" value="Add To Bag" />
+  </p>
+  <p><a href="bww_order.html" title="Back to main Menu">Back to main menu</a></p>
+  <p>&nbsp;</p>
+  <p>** On Tues. &amp; Thurs., no dressings or Carrots &amp; Celery will be provided. There is a $0.60 for each option chosen and $1.20 for both dressings **<br />
+</p>
+</form>
+</body>
+</div>
+</html>

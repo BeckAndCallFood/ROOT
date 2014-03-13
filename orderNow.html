@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en'>
+<head>
+<script language="javascript">
+function validate() {
+var email = document.getElementById('email');
+var location = document.getElementById('location');
+var selected = location.options[location.selectedIndex].value;
+
+var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+if (!filter.test(email.value)) {
+alert('Enter a vlaid email address');
+email.focus;
+return false;
+}
+if(selected=='select'){
+alert('select a location');
+return false;
+}
+}
+</script>
+
+<title>Order Now</title>
+<style rel='stylesheet' type='text/css'>
+div#heading {
+width: 1000px;
+height: 130px;
+background:url(images/header.png) no-repeat top center;
+display:block;
+}
+div#container,
+div#footer {
+    border: 1px solid white;
+    max-width: 1000px;
+    min-width: 600px;
+}
+div#container {
+    position: relative;
+    margin: 0 auto;
+	height: 500px;
+}
+div#heading {
+    margin: 10px auto -1px auto;
+}
+div#heading h1 {
+    margin: 5px;
+}
+div#left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    background: #ccc;
+    padding: 5px;
+    border-right: 1px solid black;
+}
+div#content {
+    margin-left: 211px;
+    background: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+div#footer {
+    margin: -1px auto 10px auto;
+}
+div#footer p {
+    margin: 5px;
+}        
+        #container h2 {
+	color: #B22B27;
+}
+#container #infoForm p label {
+	color: #D93228;
+}
+</style>
+    </head>
+<body>
+        <div id='container'>
+            <h2>
+            <h2 align="center">
+            <h2 align="center"><font color="red">ORDER NOW
+            </h2>
+            <h2>
+			<h4>
+            </h2>
+            <h2><em><em>Enter your Contact Info</font></em></h2>
+            <form id="infoForm" method=GET action="user/userController">
+			<p>
+			  <input type="hidden" name="form" value="infoForm">
+			  </p>
+			<p>
+			 
+			  <input name="name" type="text" id="Name" STYLE="color: #000000; background-color:  #FFDB58;" value="Name" 
+			  onfocus="if(this.value == 'Name'){this.value = '';}" onblur="if(this.value==''){this.value='Name'}"/><br><br>
+			  
+			  <input name="no" type="tel" id="no" STYLE="color: #000000; background-color:  #FFDB58;" value="Contact No" 
+			  onfocus="if(this.value == 'Contact No'){this.value = '';}" onblur="if(this.value==''){this.value='Contact No'}" /><br><br>
+			  
+			  <input name="email" type="text" id="email" STYLE="color: #000000; background-color:  #FFDB58;" value="email" 
+			  onfocus="if(this.value == 'email'){this.value = '';}" onblur="if(this.value==''){this.value='email'}"/><br><br>
+			  
+			  <select STYLE="color: #000000; background-color:  #FFDB58;" name="location" size="1" id="location" value="location"
+			 onfocus="if(this.value == 'location'){this.value = '';}" onblur="if(this.value==''){this.value='location'}" >
+			    <br><br>
+			    <option value="select">select</option>
+			    <option value="Christiana Towers - East">Christiana Towers - East</option>
+			    <option value="Christiana Towers - East">Christiana Towers - West</option>
+		      </select>
+			  <br><br>
+			  </p>
+			<p>
+	  <input STYLE="color: #FDD017; background-color:  #FF2400;" id="next" type="submit" value="Next" onClick="return validate()"/>
+	</form>
+            
+        </div>
+    </body>
+</html>

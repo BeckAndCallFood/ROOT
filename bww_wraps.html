@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style rel='stylesheet' type='text/css'>
+div#container {
+    position: relative;
+    margin: 0 auto;
+	height: 610px;
+	max-width: 1200px;
+}
+</style>
+<script type="text/javascript">
+function check1()
+{
+if(document.getElementById('wraps1').checked)
+{alert("Select Crispy / Grilled chicken "); }
+}
+function check2() {
+if(document.getElementById('wraps5').checked)
+{alert("Select a Sauce"); }
+}
+function check3() {
+if(document.getElementById('wraps6').checked)
+{alert("Select a Sauce "); }
+}
+</script>
+<title>BWW Wraps & Buffalitos</title>
+</head>
+
+<body>
+<div id="container">
+<h2 align="center"><font color="red">Choose from Wraps & Buffalitos</font></h2><br><br>
+<form id="form1" name="form1" method=GET action="bww/bwwController">
+  <p>
+    <label>
+      <input type="checkbox" name="wraps1" value="chicken" id="wraps1" onClick="check1()"/>
+     <font color="red"><b> Chicken wrap</b></font></label>
+<br><br>
+    <label>
+      <input type="radio" name="radio1" value="Crispy" id="radio" />
+      Crispy</label>
+    <label>
+      <input type="radio" name="radio1" value="Grilled" id="radio" />
+      Grilled</label>
+ <br>
+    <input type="checkbox" name="sub1" id="sub1" />
+    <label for="sub1"></label>
+  Substitute Chips n salsa with Fries<br>
+    <input type="checkbox" name="sub_sauce1" id="sub_sauce1" />
+    <label for="sub_sauce1"></label>
+  Substitute with sauce ($0.60)
+  <select name="sauce1" size="1" id="sauce1">
+    <option value="select">Select</option>
+      <option value="Sweet BBQ">Sweet BBQ</option>
+      <option value="Teriyaki">Teriyaki</option>
+      <option value="Mild">Mild</option>
+      <option value="Parmesan Garlic">Parmesan Garlic</option>
+      <option value="medium">Medium</option>
+      <option value="Honey BBQ">Honey BBQ </option>
+      <option value="Spicy garlic">Spicy Garlic</option>
+      <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+      <option value="asian">Asian ZingZing</option>
+      <option value="Carribean Jerk">Caribbean Jerk</option>
+      <option value="Hot BBQ">Hot BBQ</option>
+      <option value="Thai Curry">Thai Curry </option>
+      <option value="Hot">Hot</option>
+      <option value="Mango Habanero">Mango Habanero </option>
+      <option value="Wild">Wild</option>
+      <option value="Blazin">Blazin</option>
+  </select>
+  </p>
+    <label>
+      <input type="checkbox" name="wraps2" value="southwest" id="wraps2" />
+      <font color="red"><b>Southwest Ckn. Queso Wrap</b></font></label>
+<br>
+    <input type="checkbox" name="sub2" id="sub2" />
+    <label for="sub2"></label>
+Substitute Chips n salsa with Fries
+<br>
+    <input type="checkbox" name="sub_sauce2" id="sub_sauce2" />
+    <label for="sub_sauce2"></label>
+    Substitute with sauce ($0.60)<select name="sauce2" size="1" id="sauce2">
+    <option value="select">Select</option>
+      <option value="Sweet BBQ">Sweet BBQ</option>
+      <option value="Teriyaki">Teriyaki</option>
+      <option value="Mild">Mild</option>
+      <option value="Parmesan Garlic">Parmesan Garlic</option>
+      <option value="medium">Medium</option>
+      <option value="Honey BBQ">Honey BBQ </option>
+      <option value="Spicy garlic">Spicy Garlic</option>
+      <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+      <option value="asian">Asian ZingZing</option>
+      <option value="Carribean Jerk">Caribbean Jerk</option>
+      <option value="Hot BBQ">Hot BBQ</option>
+      <option value="Thai Curry">Thai Curry </option>
+      <option value="Hot">Hot</option>
+      <option value="Mango Habanero">Mango Habanero </option>
+      <option value="Wild">Wild</option>
+      <option value="Blazin">Blazin</option>
+  </select>
+  <p>
+    <label>
+      <input type="checkbox" name="wraps3" value="buffalo" id="wraps3" />
+      <font color="red"><b>Buffalo Ranch Chicken Wrap</b></font></label>
+<br>
+    <input type="checkbox" name="sub3" id="sub3" />
+    <label for="sub3"></label>
+Substitute Chips n salsa with Fries<br>
+    <input type="checkbox" name="sub_sauce3" id="sub_sauce3" />
+    <label for="sub_sauce3"></label>
+    Substitute with sauce ($0.60)<select name="sauce3" size="1" id="sauce3">
+    <option value="select">Select</option>
+      <option value="Sweet BBQ">Sweet BBQ</option>
+      <option value="Teriyaki">Teriyaki</option>
+      <option value="Mild">Mild</option>
+      <option value="Parmesan Garlic">Parmesan Garlic</option>
+      <option value="medium">Medium</option>
+      <option value="Honey BBQ">Honey BBQ </option>
+      <option value="Spicy garlic">Spicy Garlic</option>
+      <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+      <option value="asian">Asian ZingZing</option>
+      <option value="Carribean Jerk">Caribbean Jerk</option>
+      <option value="Hot BBQ">Hot BBQ</option>
+      <option value="Thai Curry">Thai Curry </option>
+      <option value="Hot">Hot</option>
+      <option value="Mango Habanero">Mango Habanero </option>
+      <option value="Wild">Wild</option>
+      <option value="Blazin">Blazin</option>
+  </select>
+  <p>
+    <label>
+      <input type="checkbox" name="wraps4" value="steak" id="wraps4" />
+      <font color="red"><b>Pepper Jack Steak Wrap</b></font></label>
+  <br>
+    <input type="checkbox" name="sub4" id="sub4" />
+    <label for="sub4"></label>
+Substitute Chips n salsa with Fries<br>
+    <input type="checkbox" name="sub_sauce4" id="sub_sauce4" />
+    <label for="sub_sauce4"></label>
+    Substitute with sauce (upcharge - $0.60)
+	<select name="sauce4" size="1" id="sauce4">
+    <option value="select">Select</option>
+      <option value="Sweet BBQ">Sweet BBQ</option>
+      <option value="Teriyaki">Teriyaki</option>
+      <option value="Mild">Mild</option>
+      <option value="Parmesan Garlic">Parmesan Garlic</option>
+      <option value="medium">Medium</option>
+      <option value="Honey BBQ">Honey BBQ </option>
+      <option value="Spicy garlic">Spicy Garlic</option>
+      <option value="Jammin Jalapeno">Jammin Jammin Jalapeno</option>
+      <option value="asian">Asian ZingZing</option>
+      <option value="Carribean Jerk">Caribbean Jerk</option>
+      <option value="Hot BBQ">Hot BBQ</option>
+      <option value="Thai Curry">Thai Curry </option>
+      <option value="Hot">Hot</option>
+      <option value="Mango Habanero">Mango Habanero </option>
+      <option value="Wild">Wild</option>
+      <option value="Blazin">Blazin</option>
+  </select>
+  <p>
+    <label>
+      <input type="checkbox" name="wraps5" value="fish" id="wraps5" onClick="check2()"/>
+      <font color="red"><b>2 Fish Tacos</b></font></label>
+    <br />
+   Sauce : <select name="fish_sauce" size="1" id="fish_sauce">
+      <option value="select">Select</option>
+      <option value="Sweet BBQ">Sweet BBQ</option>
+      <option value="Teriyaki">Teriyaki</option>
+      <option value="Mild">Mild</option>
+      <option value="Parmesan Garlic">Parmesan Garlic</option>
+      <option value="medium">Medium</option>
+      <option value="Honey BBQ">Honey BBQ </option>
+      <option value="Spicy garlic">Spicy Garlic</option>
+      <option value="Jammin Jalapeno">Jammin Jammin Jalapeno</option>
+      <option value="asian">Asian ZingZing</option>
+      <option value="Carribean Jerk">Caribbean Jerk</option>
+      <option value="Hot BBQ">Hot BBQ</option>
+      <option value="Thai Curry">Thai Curry Curry</option>
+      <option value="Hot">Hot</option>
+      <option value="Mango Habanero">Mango Habanero Habanero</option>
+      <option value="Wild">Wild</option>
+      <option value="Blazin">Blazin</option>
+      </select>
+  <br>
+    <input type="checkbox" name="sub5" id="sub5" />
+    <label for="sub5"></label>
+Substitute Chips n salsa with Fries<br>
+    <input type="checkbox" name="sub_sauce5" id="sub_sauce5" />
+    <label for="sub_sauce5"></label>
+    Substitute with sauce ($0.60)
+	<select name="sauce5" size="1" id="sauce5">
+    <option value="select">Select</option>
+      <option value="Sweet BBQ">Sweet BBQ</option>
+      <option value="Teriyaki">Teriyaki</option>
+      <option value="Mild">Mild</option>
+      <option value="Parmesan Garlic">Parmesan Garlic</option>
+      <option value="medium">Medium</option>
+      <option value="Honey BBQ">Honey BBQ </option>
+      <option value="Spicy garlic">Spicy Garlic</option>
+      <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+      <option value="asian">Asian ZingZing</option>
+      <option value="Carribean Jerk">Caribbean Jerk</option>
+      <option value="Hot BBQ">Hot BBQ</option>
+      <option value="Thai Curry">Thai Curry </option>
+      <option value="Hot">Hot</option>
+      <option value="Mango Habanero">Mango Habanero </option>
+      <option value="Wild">Wild</option>
+      <option value="Blazin">Blazin</option>
+  </select>
+<br><p>
+    <label>
+      <input type="checkbox" name="wraps6" value="buffalitos" id="wraps6" onClick="check3()"/>
+      <font color="red"><b>2 Grillled Chicken Buffalitos</b></font></label>
+    <br />
+    Sauce: <select name="buffalito_sauce" size="1" id="buffalito_sauce">
+      <option value="select">Select</option>
+      <option value="Sweet BBQ">Sweet BBQ</option>
+      <option value="Teriyaki">Teriyaki</option>
+      <option value="Mild">Mild</option>
+      <option value="Parmesan Garlic">Parmesan Garlic</option>
+      <option value="medium">Medium</option>
+      <option value="Honey BBQ">Honey BBQ </option>
+      <option value="Spicy garlic">Spicy Garlic</option>
+      <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+      <option value="asian">Asian ZingZing</option>
+      <option value="Carribean Jerk">Caribbean Jerk</option>
+      <option value="Hot BBQ">Hot BBQ</option>
+      <option value="Thai Curry">Thai Curry </option>
+      <option value="Hot">Hot</option>
+      <option value="Mango Habanero">Mango Habanero </option>
+      <option value="Wild">Wild</option>
+      <option value="Blazin">Blazin</option>
+      </select>
+  <br>
+    <input type="checkbox" name="sub6" id="sub6" />
+    <label for="sub6"></label>
+Substitute Chips n salsa with Fries<br>
+    <input type="checkbox" name="sub_sauce6" id="sub_sauce6" />
+    <label for="sub_sauce6"></label>
+  Substitute with sauce ($0.60)
+  <select name="sauce6" size="1" id="sauce6">
+    <option value="select">Select</option>
+      <option value="Sweet BBQ">Sweet BBQ</option>
+      <option value="Teriyaki">Teriyaki</option>
+      <option value="Mild">Mild</option>
+      <option value="Parmesan Garlic">Parmesan Garlic</option>
+      <option value="medium">Medium</option>
+      <option value="Honey BBQ">Honey BBQ </option>
+      <option value="Spicy garlic">Spicy Garlic</option>
+      <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+      <option value="asian">Asian ZingZing</option>
+      <option value="Carribean Jerk">Caribbean Jerk</option>
+      <option value="Hot BBQ">Hot BBQ</option>
+      <option value="Thai Curry">Thai Curry </option>
+      <option value="Hot">Hot</option>
+      <option value="Mango Habanero">Mango Habanero</option>
+      <option value="Wild">Wild</option>
+      <option value="Blazin">Blazin</option>
+  </select></p>
+   <input type="hidden" name="action" value="addWraps">
+   <input STYLE="color: #FDD017; background-color:  #FF2400;" type="submit" name="add" id="button" value="Add to Bag" />
+     <p><a href="bww_order.html" title="Back to main Menu">Back to main menu</a></p>
+</form>
+</div>
+</body>
+</html>

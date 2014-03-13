@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style rel='stylesheet' type='text/css'>
+div#container {
+    position: relative;
+    margin: 0 auto;
+	height: 610px;
+	max-width: 1200px;
+}
+</style>
+<script type="text/javascript">
+function check1() {
+if(document.getElementById('tenders1').checked) { alert("Select a Dipping sauce / No sauce / Sauce on side option"); }
+}
+function check2() {
+if(document.getElementById('tenders2').checked) { alert("Select a Dipping sauce / No sauce / Sauce on side option"); }
+}
+function check3() {
+if(document.getElementById('tenders3').checked) { alert("Select a Dipping sauce / No sauce / Sauce on side option"); }
+}
+function check4() {
+if(document.getElementById('tenders4').checked) { alert("Select a Dipping sauce / No sauce / Sauce on side option"); }
+}
+function check5() {
+if(document.getElementById('tenders5').checked) { alert("Select a Dipping sauce / No sauce / Sauce on side option"); }
+}
+function check6() {
+if(document.getElementById('tenders6').checked) { alert("Select a Dipping sauce / No sauce / Sauce on side option"); }
+}
+</script>
+<title>BWW Tenders and Popcorn Shrimps</title>
+</head>
+
+<body>
+<div id="container">
+<h2 align="center"><font color="red">Choose from Tenders & Popcorn Shrimps</font></h2>
+<form id="form1" name="form1" method=GET action="bww/bwwController">
+  <p>
+    <label>
+      <input type="checkbox" name="tenders1" value="naked_4" id="tenders1" onClick="check1()"/>
+      <font color="red"><b>4 Naked Tenders</b></font></label><br><br>
+      Dipping Sauce : 
+    <label for="dipping1"></label>
+    <select name="dipping1" size="1" id="dipping1">
+    <option value="select">Select</option>
+      <option value="Bleu Cheese">Bleu Cheese</option>
+      <option value="Ranch">Ranch</option>
+    </select>
+ <br>
+    <input type="checkbox" name="no1" id="no" />
+    <label for="no"></label>
+   No sauce 
+   <input type="checkbox" name="onside1" id="onside" />
+   <label for="onside"></label>
+  Sauce on Side <br>
+    <input type="checkbox" name="sideof1" id="sideof" />
+    <label for="sideof1"></label>
+    Side of sauce ( $0.60) &nbsp; &nbsp;
+<select name="sauce1" size="1" id="sauce1">
+    <option value="select">Select</option>
+      <option value="Sweet BBQ">Sweet BBQ</option>
+      <option value="Teriayki">Teriayki</option>
+      <option value="Mild">Mild</option>
+      <option value="Parmesan Garlic">Parmesan Garlic</option>
+      <option value="Medium">Medium</option>
+      <option value="Honey BBQ">Honey BBQ </option>
+      <option value="Spicy Garlic">Spicy Garlic</option>
+      <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+      <option value="asian">Asian Zing</option>
+      <option value="Carribean Jerk">Caribbean Jerk</option>
+      <option value="Hot BBQ">Hot BBQ</option>
+      <option value="Thai Curry">Thai Curry </option>
+      <option value="Hot">Hot</option>
+      <option value="Mango Habanero">Mango Habanero</option>
+      <option value="Wild">Wild</option>
+      <option value="Blazin">Blazin</option>
+  </select>
+  </p>
+  <p><br />
+    <label>
+      <input type="checkbox" name="tenders2" value="naked_6" id="tenders2" onClick="check2()"/>
+      <font color="red"><b>6 Naked Tenders</b></font></label>
+  </p>
+  Dipping Sauce :
+    <label for="dipping2"></label>
+    <select name="dipping2" size="1" id="dipping2">
+    <option value="select">Select</option>
+      <option value="Bleu Cheese">Bleu Cheese</option>
+      <option value="Ranch">Ranch</option>
+    </select>
+  <br>
+    <input type="checkbox" name="no2" id="no2" />
+    <label for="no2"></label>
+    No sauce
+  <input type="checkbox" name="onside2" id="onside2" />
+  <label for="onside2"></label>
+    Sauce on Side<br>
+    <input type="checkbox" name="sideof2" id="sideof2" />
+    <label for="sideof2"></label>
+    Side of sauce ( $0.60) &nbsp; &nbsp;
+  <select name="sauce2" size="1" id="sauce2">
+    <option value="select">Select</option>
+    <option value="Sweet BBQ">Sweet BBQ</option>
+    <option value="Teriayki">Teriayki</option>
+    <option value="Mild">Mild</option>
+    <option value="Parmesan Garlic">Parmesan Garlic</option>
+    <option value="Medium">Medium</option>
+    <option value="Honey BBQ">Honey BBQ </option>
+    <option value="Spicy Garlic">Spicy Garlic</option>
+    <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+    <option value="asian">Asian Zing</option>
+    <option value="Carribean Jerk">Caribbean Jerk</option>
+    <option value="Hot BBQ">Hot BBQ</option>
+    <option value="Thai Curry">Thai Curry</option>
+    <option value="Hot">Hot</option>
+    <option value="Mango Habanero">Mango Habanero</option>
+    <option value="Wild">Wild</option>
+    <option value="Blazin">Blazin</option>
+  </select>
+  </p>
+  <p><br />
+    <label>
+      <input type="checkbox" name="tenders3" value="chicken_4" id="tenders3" onClick="check3()"/>
+      <font color="red"><b>4 Chicken Tenders</b></font></label>
+<br><br>
+Dipping Sauce :
+    <label for="dipping3"></label>
+    <select name="dipping3" size="1" id="dipping3">
+    <option value="select">Select</option>
+      <option value="Bleu Cheese">Bleu Cheese</option>
+      <option value="Ranch">Ranch</option>
+    </select><br>
+    <input type="checkbox" name="no3" id="no3" />
+    <label for="no3"></label>
+    No sauce
+  <input type="checkbox" name="onside3" id="onside3" />
+  <label for="onside3"></label>
+    Sauce on Side <br>
+    <input type="checkbox" name="sideof3" id="sideof3" />
+    <label for="sideof3"></label>
+    Side of sauce ( $0.60) &nbsp; &nbsp;
+  <select name="sauce3" size="1" id="sauce3">
+    <option value="select">Select</option>
+    <option value="Sweet BBQ">Sweet BBQ</option>
+    <option value="Teriayki">Teriayki</option>
+    <option value="Mild">Mild</option>
+    <option value="Parmesan Garlic">Parmesan Garlic</option>
+    <option value="Medium">Medium</option>
+    <option value="Honey BBQ">Honey BBQ </option>
+    <option value="Spicy Garlic">Spicy Garlic</option>
+    <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+    <option value="asian">Asian Zing</option>
+    <option value="Carribean Jerk">Caribbean Jerk</option>
+    <option value="Hot BBQ">Hot BBQ</option>
+    <option value="Thai Curry">Thai Curry</option>
+    <option value="Hot">Hot</option>
+    <option value="Mango Habanero">Mango Habanero</option>
+    <option value="Wild">Wild</option>
+    <option value="Blazin">Blazin</option>
+  </select>
+  </p><p><p>
+    <label>
+      <input type="checkbox" name="tenders4" value="chicken_6" id="tenders4" onClick="check4()"/>
+      <font color="red"><b>6 Chicken Tenders</b></font></label>
+  <br><br>Dipping Sauce :
+    <label for="dipping4"></label>
+    <select name="dipping4" size="1" id="dipping4">
+    <option value="select">Select</option>
+      <option value="Bleu Cheese">Bleu Cheese</option>
+      <option value="Ranch">Ranch</option>
+    </select><br>
+    <input type="checkbox" name="no4" id="no4" />
+    <label for="no4"></label>
+    No sauce
+  <input type="checkbox" name="onside4" id="onside4" />
+  <label for="onside4"></label>
+    Sauce on Side <br>
+    <input type="checkbox" name="sideof4" id="sideof4" />
+    <label for="sideof4"></label>
+    Side of sauce ( $0.60) &nbsp; &nbsp;
+  <select name="sauce4" size="1" id="sauce4">
+    <option value="select">Select</option>
+    <option value="Sweet BBQ">Sweet BBQ</option>
+    <option value="Teriayki">Teriayki</option>
+    <option value="Mild">Mild</option>
+    <option value="Parmesan Garlic">Parmesan Garlic</option>
+    <option value="Medium">Medium</option>
+    <option value="Honey BBQ">Honey BBQ </option>
+    <option value="Spicy Garlic">Spicy Garlic</option>
+    <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+    <option value="asian">Asian Zing</option>
+    <option value="Carribean Jerk">Caribbean Jerk</option>
+    <option value="Hot BBQ">Hot BBQ</option>
+    <option value="Thai Curry">Thai Curry</option>
+    <option value="Hot">Hot</option>
+    <option value="Mango Habanero">Mango Habanero</option>
+    <option value="Wild">Wild</option>
+    <option value="Blazin">Blazin</option>
+  </select>
+  </p>
+    <label>
+      <input type="checkbox" name="tenders5" value="shrimp" id="tenders5" onClick="check5()"/>
+      <font color="red"><b>Popcorn Shrimp</b></font></label>
+ <br><br>Dipping Sauce :
+    <label for="dipping5"></label>
+    <select name="dipping5" size="1" id="dipping5">
+    <option value="select">Select</option>
+      <option value="Cheese">Bleu Cheese</option>
+      <option value="Ranch">Ranch</option>
+      <option value="Cocktail">Cocktail</option>ß
+    </select>
+ <br>
+    <input type="checkbox" name="no5" id="no5" />
+    <label for="no5"></label>
+    No sauce
+  <input type="checkbox" name="onside5" id="onside5" />
+  <label for="onside5"></label>
+    Sauce on Side <br>
+    <input type="checkbox" name="sideof5" id="sideof5" />
+    <label for="sideof5"></label>
+    Side of sauce ( $0.60) &nbsp; &nbsp;
+  <select name="sauce5" size="1" id="sauce5">
+    <option value="select">Select</option>
+    <option value="Sweet BBQ">Sweet BBQ</option>
+    <option value="Teriayki">Teriayki</option>
+    <option value="Mild">Mild</option>
+    <option value="Parmesan Garlic">Parmesan Garlic</option>
+    <option value="Medium">Medium</option>
+    <option value="Honey BBQ">Honey BBQ </option>
+    <option value="Spicy Garlic">Spicy Garlic</option>
+    <option value="Jammin Jalapeno">Jammin Jalapeno</optio>
+    <option value="asian">Asian Zing</option>
+    <option value="Carribean Jerk">Caribbean Jerk</option>
+    <option value="Hot BBQ">Hot BBQ</option>
+    <option value="Thai Curry">Thai Curry</option>
+    <option value="Hot">Hot</option>
+    <option value="Mango Habanero">Mango Habanero</option>
+    <option value="Wild">Wild</option>
+    <option value="Blazin">Blazin</option>
+  </select>
+  </p>
+  <p><br />
+    <label>
+      <input type="checkbox" name="tenders6" value="tenders_shrimp" id="tenders6" onClick="check6()"/>
+      <font color="red"><b>Chk. Tenders & Pop. Shrimps</b></font></label>
+  </p>
+  <p>Dipping Sauce :
+    <label for="dipping6"></label>
+    <select name="dipping6" size="1" id="dipping6">
+    <option value="select">Select</option>
+      <option value="Bleu Cheese">Bleu Cheese</option>
+      <option value="Ranch">Ranch</option>
+      <option value="Cocktail">Cocktail</option>
+    </select>
+  <br>
+    <input type="checkbox" name="no6" id="no6" />
+    <label for="no6"></label>
+    No sauce
+  <input type="checkbox" name="onside6" id="onside6" />
+  <label for="onside6"></label>
+    Sauce on Side <br>
+    <input type="checkbox" name="sideof6" id="sideof6" />
+    <label for="sideof6"></label>
+    Side of sauce ( $0.60)<br />
+  <select name="sauce6" size="1" id="sauce6">
+    <option value="select">Select</option>
+    <option value="Sweet BBQ">Sweet BBQ</option>
+    <option value="Teriayki">Teriayki</option>
+    <option value="Mild">Mild</option>
+    <option value="Parmesan Garlic">Parmesan Garlic</option>
+    <option value="Medium">Medium</option>
+    <option value="Honey BBQ">Honey BBQ </option>
+    <option value="Spicy Garlic">Spicy Garlic</option>
+    <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+    <option value="asian">Asian Zing</option>
+    <option value="Carribean Jerk">Caribbean Jerk</option>
+    <option value="Hot BBQ">Hot BBQ</option>
+    <option value="Thai Curry">Thai Curry</option>
+    <option value="Hot">Hot</option>
+    <option value="Mango Habanero">Mango Habanero</option>
+    <option value="Wild">Wild</option>
+    <option value="Blazin">Blazin</option>
+  </select>
+  </p>
+  <p>&nbsp;</p>
+  <p>
+    <input type="checkbox" name="substitute" id="substitute" />
+    <label for="substitute"></label>
+   Substitute Fries with :</p>
+  <p>
+    <label for="sub"></label>
+    <select name="sub" size="1" id="sub">
+      <option value="select">Select</option>
+      <option value="Onion Rings">Onion Rings</option>
+      <option value="Side Salad">Side Salad</option>
+      <option value="ColeSlaw">ColeSlaw</option>
+      <option value="Veggie Boat">Veggie Boat</option>
+      <option value="Buffalo Chips">Buffalo Chips</option>
+      <option value="Potato Wedges">Potato Wedges</option>
+    </select>
+  </p>
+  <p>&nbsp;</p>
+   <input type="hidden" name="action" value="addTenders">
+  <input STYLE="color: #FDD017; background-color:  #FF2400;" type="submit" name="add" id="button" value="Add to Bag" />
+  </p>
+    <p><a href="bww_order.html" title="Back to main Menu">Back to main menu</a></p>
+</form>
+<p>&nbsp;</p>
+</body>
+</div>
+</html>

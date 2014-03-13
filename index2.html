@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en'>
+<head>
+<style rel='stylesheet' type='text/css'>
+div#heading {
+width: 1000px;
+height: 130px;
+background:url(images/header.png) no-repeat top center;
+display:block;
+}
+div#container,
+div#footer {
+    border: 1px solid white;
+    max-width: 1000px;
+    min-width: 600px;
+}
+div#container {
+    position: relative;
+    margin: 0 auto;
+	height: 500px;
+}
+div#heading {
+    margin: 10px auto -1px auto;
+}
+div#heading h1 {
+    margin: 5px;
+}
+div#left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    background: #ccc;
+    padding: 5px;
+    border-right: 1px solid black;
+}
+div#content {
+    margin-left: 211px;
+    background: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+div#footer {
+    margin: -1px auto 10px auto;
+}
+div#footer p {
+    margin: 5px;
+}        
+        #container h2 {
+	color: #B22B27;
+}
+#container #infoForm p label {
+	color: #D93228;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <title>Login Page</title>
+ </head>
+ <body>
+ <div id="container">
+<form method="post" action="login.jsp">
+<p><h2 align="center"><font color="red">Login Here !</font></h2></p>
+<font color="red"><b>Email
+<input STYLE="color: #000000; background-color:  #FFDB58;" type="text" name="email" value="" /><br><br>
+Password</b></font>
+<input STYLE="color: #000000; background-color:  #FFDB58;" type="password" name="pass" value="" /><br><br>
+<input STYLE="color: #FDD017; background-color:  #FF2400;" type="submit" value="Login" /><br><br><br>
+<input STYLE="color: #FDD017; background-color:  #FF2400;" type="reset" value="Reset" /></br><br>
+Not Yet Registered ?? <a href="reg.jsp">Register Here</a><br><br><br>
+</form>
+<a href="mainPage.html">Back to Main Page</a><p>
+</div>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+a.tip {
+  position: relative;
+  text-decoration: none;
+}
+a.tip:hover:after {
+  position: absolute;
+  display: block;
+  content: "";  
+  border-color: rgba(0,0,0,.8) transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  height:0;
+  width:0;
+  position:absolute;
+  top: -8px;
+  left:1em;
+}
+div#container {
+    position: relative;
+    margin: 0 auto;
+	height: 610px;
+	max-width: 1200px;
+}
+</style>
+<script type="text/javascript">
+function check3() {
+if(document.getElementById('sharables_3').checked) {alert("Select a sauce"); } }
+function check4() {
+if(document.getElementById('sharables_4').checked) {alert("Select a sauce"); } }
+function check5() {
+if(document.getElementById('sharables_5').checked) {alert("Select a sauce"); } }
+function check6() {
+if(document.getElementById('sharables_6').checked) {alert("Select a sauce"); } }
+function check9() {
+if(document.getElementById('sharables_9').checked) {alert("Select a sauce & either Bleu Cheese or Ranch"); } }
+function check10() {
+if(document.getElementById('sharables_10').checked) {alert("Select a sauce and Seasoning"); } }
+function check14() {
+if(document.getElementById('sharables_14').checked) {alert("Select any two of Queso / Spicy mustard / BWW sauce"); } }
+
+</script> 
+<title>BWW Sharables Menu</title>
+</head>
+
+<body>
+<div id="container">
+<h2 align="center"><font color="red">Choose from Sharables</font></h2>
+  </strong></p>
+  <p align="left">&nbsp;</p>
+  <form id="sharables" name="sharables" method=GET action="bww/bwwController">
+    <p>
+      <label>
+        <input type="checkbox" name="sharables0" value="nachos" id="sharables_0"/>
+       <font color="red"><b> Ultimate Nachos</label>
+  <br /><br />
+      <label>
+        <input type="checkbox" name="sharables1" value="nachos_w" id="sharables_1"/>
+        Ultimate Nachos w/ chicken</label>
+      <br /><br />
+      <label>
+        <input type="checkbox" name="sharables2" value="cheeseburger" id="sharables_2" onClick="check2()"/>
+        Cheeseburger Slammers</b></font></label>
+      <br /><br />
+        <input type="checkbox" name="sharables3" value="pork" id="sharables_3" onClick="check3()"/>
+        <a href="#" class="tip" title="Choice of sauce"><font color="red"><b>Pulled Pork Slammers</b></font></a>    </p>
+    <p>       Sauces: 
+      <label for="sauce3"></label>
+      <select name="sauce3" size="1" id="sauce3">
+      <option value="select">Select</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild ">Mild </option>
+        <option value="Parmesan garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+        <option value="Asian">Asian Zing</option>
+        <option value="Carribean Jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai curry">Thai Curry</option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero</option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select>
+      <br />
+      <br />
+      <input type="checkbox" name="sharables4" value="chicken" id="sharables_4" onClick="check4()"/>
+      <a href="#" class="tip" title="Choice of sauce"><font color="red"><b>Chicken Tender Slammers</b></font></a></p>
+    <p>Sauces:
+      <label for="sauce4"></label>
+      <select name="sauce4" size="1" id="sauce4">
+      <option value="select">Select</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild ">Mild </option>
+        <option value="Parmesan garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+        <option value="Asian">Asian Zing</option>
+        <option value="Carribean Jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai curry">Thai Curry</option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero</option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select>
+<br />
+      <br />
+      <input type="checkbox" name="sharables5" value="steak" id="sharables_5" onClick="check5()"/>
+      <a href="#" class="tip" title="Choice of sauce"><font color="red"><b>Sliced Steak Slammers</b></font></a>    </p>
+    <p>Sauces:
+      <label for="sauce5"></label>
+      <select name="sauce5" size="1" id="sauce5">
+      <option value="select">Select</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild ">Mild </option>
+        <option value="Parmesan garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+        <option value="Asian">Asian Zing</option>
+        <option value="Carribean Jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai curry">Thai Curry</option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero</option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select>
+<br />
+      <br />
+      <input type="checkbox" name="sharables6" value="beef" id="sharables_6" onClick="check6()"/>
+      <a href="#" class="tip" title="Choice of sauce"><font color="red"><b>Mini Beef Dog Slammers</b></font></a></p>
+    <p>Sauces:
+      <label for="sauce6"></label>
+      <select name="sauce6" size="1" id="sauce6">
+      <option value="select">Select</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild ">Mild </option>
+        <option value="Parmesan garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+        <option value="Asian">Asian Zing</option>
+        <option value="Carribean Jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai curry">Thai Curry</option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero</option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select>
+<br />
+      <br />
+      <label>
+        <input type="checkbox" name="sharables7" value="beef_cc" id="sharables_7"/>
+        With Chili & Cheese</label>
+      <br /><br /><br>
+      <label>
+        <input type="checkbox" name="sharables8" value="pickles" id="sharables_8" />
+       <font color="red"><b> Fried Pickles</b></font></label>
+      <br /><br />
+      <input type="checkbox" name="sharables9" value="sampler" id="sharables_9" onClick="check9()"/>
+      <a href="#" class="tip" title="Choice of sauce for Wings / Blue Cheese or Ranch?">
+	  <font color="red"><b>The Sampler</b></font></a></p>
+    <p>Sauces:
+      <label for="sauce9"></label>
+      <select name="sauce9" size="1" id="sauce9">
+        <option value="select">Select</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild ">Mild </option>
+        <option value="Parmesan garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+        <option value="Asian">Asian Zing</option>
+        <option value="Carribean Jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai curry">Thai Curry</option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero</option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select>
+</p>
+    <p>
+      <label>
+        <input type="radio" name="sampler_check" value="Bleu cheese" id="cheese"/>
+        Bleu cheese</label>
+      <br />
+      <label>
+        <input type="radio" name="sampler_check" value="Ranch" id="ranch"/>
+        Ranch</label>
+      <br />
+      <br />
+      <br />
+      <input type="checkbox" name="sharables10" value="tablegating" id="sharables_10" onClick="check10()"/>
+      <a href="#" class="tip" title="Choice of sauce / seasoning for Wings">
+	  <font color="red"><b>Tablegating Sampler</b></font></a></p>
+    <p>Sauces :
+      <label for="sauce10"></label>
+      <select name="sauce10" size="1" id="sauce10">
+        <option value="select">Select</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild ">Mild </option>
+        <option value="Parmesan garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+        <option value="Asian">Asian Zing</option>
+        <option value="Carribean Jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai curry">Thai Curry</option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero</option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select>
+</p>
+    <p>Seasonings : 
+      <label for="seasoning"></label>
+      <select name="seasoning" size="1" id="seasoning">
+        <option value="Salt & Vinegar">Salt &amp; Vinegar</option>
+        <option value="Lemon Pepper">Lemon Pepper</option>
+        <option value="Buffalo">Buffalo</option>
+        <option value="Chipotle BBQ">Chipotle BBQ</option>
+        <option value="Dessert Heat">Dessert Heat</option>
+      </select>
+      <br />
+      <br />
+      <label>
+        <input type="checkbox" name="sharables11" value="mozzarella" id="sharables_11" />
+        <font color="red"><b>Mozzarella Sticks</label>
+      <br /><br />
+      <label>
+        <input type="checkbox" name="sharables12" value="chips_salsa" id="sharables_12" />
+        Chips & Salsa</label>
+      <br /><br />
+      <label>
+        <input type="checkbox" name="sharables13" value="dip" id="sharables_13" />
+        Chilli Corn Queso Dip</b></font></label>
+      <br /><br />
+      <input type="checkbox" name="sharables14" value="pretzels" id="sharables_14" onClick="check14()"/>
+      <a href="#" class="tip" title="Choose two: Queso sauce, spicy mustard, BWW sauce"><font color="red"><b>3 Soft Pretzels</b></font></a>    </p>
+    <p>
+      <label>
+        <input type="checkbox" name="pretzel1" value="queso" id="queso"/>
+        Queso sauce</label>
+      <br />
+      <label>
+        <input type="checkbox" name="pretzel2" value="bww" id="bww"/>
+        BWW sauce : &nbsp; </label>
+		<select name="bwwSauce" size="1" id="bwwSauce" disabled=true>
+      <option value="select">Select</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild ">Mild </option>
+        <option value="Parmesan garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jammin Jalapeno">Jammin Jalapeno</option>
+        <option value="Asian">Asian Zing</option>
+        <option value="Carribean Jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai curry">Thai Curry</option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero</option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select>
+      <br />
+      <label>
+        <input type="checkbox" name="pretzel3" value="mustard" id="mustard"/>
+        Spicy Mustard</label>
+      <br />
+      <br />
+      <br />
+      <label>
+        <input type="checkbox" name="sharables15" value="quesadilla" id="sharables_15" />
+        <font color="red"><b>Chicken Quesadilla</label>
+      <br /><br />
+      <label>
+        <input type="checkbox" name="sharables16" value="mushrooms" id="sharables_16" />
+        Roasted Garlic Mushrooms</label>
+      <br /><br />
+      <label>
+        <input type="checkbox" name="sharables17" value="dogs" id="sharables_17" />
+        Mini Corn Dogs</label>
+      <br /><br />
+      <label>
+        <input type="checkbox" name="sharables18" value="spinach_dip" id="sharables_18" />
+        Spinach Artichoke Dip</label>
+      <br /><br />
+      <label>
+        <input type="checkbox" name="sharables19" value="Jammin Jalapeno" id="sharables_19" />
+        Jammin Jalapeno Pepper Bites</label>
+      <br /><br />
+	  <label>
+        <input type="checkbox" name="sharables20" value="Molten Dip" id="sharables_20" />
+        Molten Dip</b></font></label>
+      <br /><br />
+	   <input type="hidden" name="action" value="addSharables"> 
+    <input STYLE="color: #FDD017; background-color:  #FF2400;" name="add" type="submit" value="Add to Bag" onClick="return validate()"/>
+	  <p><a href="bww_order.html" title="Back to main Menu">Back to main menu</a></p>
+  </form>
+  </div>
+</body>
+</html>

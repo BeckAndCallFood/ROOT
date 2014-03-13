@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang='en'>
+<head>
+<style rel='stylesheet' type='text/css'>
+div#container {
+    position: relative;
+    margin: 0 auto;
+	height: 610px;
+	max-width: 1200px;
+}
+</style>
+<script language="javascript">
+function check1()
+{
+if(document.getElementById('kids_0').checked)
+{alert("Please select any of the 4 options and either Fruit cup / Carrots / French Fries"); }
+}
+fucntion check2() {
+if(document.getElementById('kids2').checked)
+{alert("Please select a sauce and either Fruit cup / Carrots / French Fries"); } }
+function check3() {
+if(document.getElementById('kids3').checked)
+{alert("Please select a sauce and either Fruit cup / Carrots / French Fries"); } }
+function check4() {
+if(document.getElementById('kids4').checked)
+{alert("Please select a sauce and either Fruit cup / Carrots / French Fries"); } }
+function check5() {
+if(document.getElementById('kids5').checked)
+{alert("Please select a sauce and either Fruit cup / Carrots / French Fries"); } }
+function check6() {
+{alert("Please select either Fruit cup / Carrots / French Fries"); } }
+function check7() {
+{alert("Please select either Fruit cup / Carrots / French Fries"); } }
+</script>
+<title>BWW Kids</title>
+</head>
+
+<body>
+<div id="container">
+<h2 align="center"><font color="red">Choose from Kids' Meals</font></h2>
+<form id="form1" name="kidsForm" method=GET onClick="return ValidateForm(kidsForm)"  action="bww/bwwController" >
+  <p>
+    <label>
+      <input type="checkbox" name="kids1" value="slammer" id="kids_0" onClick="check()1"/>
+     <font color="red"><b> Cheeseburger Slammer</b></font></label><br>
+    <label>
+      <input type="radio" name="slammer_radio" value="American" id="slammer_radio_0" />
+      American</label>
+    <label>
+      <input type="radio" name="slammer_radio" value="Pepper Jack" id="slammer_radio_1" />
+      Pepperjack</label>
+    <label>
+      <input type="radio" name="slammer_radio" value="Cheddar" id="slammer_radio_2" />
+      Cheddar</label>
+    <label>
+      <input type="radio" name="slammer_radio" value="Swiss " id="slammer_radio_3" />
+      Swiss</label>
+    <label>
+      <input type="radio" name="slammer_radio" value="Queso" id="slammer_radio_4" />
+      Queso</label><br>
+	   With : 
+    <label>
+      <input type="radio" name="kids_sides" value="Fruit Cup" id="kids_sides_0" />
+      Fruit Cup</label>
+    <label>
+      <input type="radio" name="kids_sides" value="Carrots" id="kids_sides_1" />
+      Carrots</label>
+    <label>
+      <input type="radio" name="kids_sides" value="French Fries" id="kids_sides_2" />
+      French fries</label><br>
+  </p>
+    <label>
+      <input type="checkbox" name="kids2" value="wings" id="kids2" onClick="check2()"/>
+      <font color="red"><b>Boneless Wings (4)</b></font></label><br>
+	  Sauce:
+  <label for="sauce2"></label>
+      <select name="sauce2" size="1" id="sauce2">
+      <option value="select">Select</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild">Mild</option>
+        <option value="Parmesan Garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jamin Jalapeno">Jammin Jamin</option>
+        <option value="Asian Zing">Asian Zing Zing</option>
+        <option value="Caribbean Jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai Curry">Thai Curry</option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero Habanero</option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select><br>With : 
+    <label>
+      <input type="radio" name="kids_sides" value="Fruit Cup" id="kids_sides_0" />
+      Fruit Cup</label>
+    <label>
+      <input type="radio" name="kids_sides" value="Carrots" id="kids_sides_1" />
+      Carrots</label>
+    <label>
+      <input type="radio" name="kids_sides" value="French Fries" id="kids_sides_2" />
+      French fries</label>
+    <label><br>
+	<p>
+      <input type="checkbox" name="kids3" value="tenders" id="kids3" onClick="check3()"/>
+      <font color="red"><b>Chicken Tenders (3)</b></font></label><br>
+ Sauce :<label for="sauce3"></label>
+      <select name="sauce3" size="1" id="sauce3">
+      <option value="select">Select</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild">Mild</option>
+        <option value="Parmesan Garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jamin Jalapeno">Jammin Jamin </option>
+        <option value="Asian Zing">Asian Zing Zing</option>
+        <option value="Caribbean Jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai Curry">Thai Curry</option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero</option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select><br>With : 
+    <label>
+      <input type="radio" name="kids_sides" value="Fruit Cup" id="kids_sides_0" />
+      Fruit Cup</label>
+    <label>
+      <input type="radio" name="kids_sides" value="Carrots" id="kids_sides_1" />
+      Carrots</label>
+    <label>
+      <input type="radio" name="kids_sides" value="French Fries" id="kids_sides_2" />
+      French fries</label>
+    <label><br><p>
+      <input type="checkbox" name="kids4" value="dog" id="kids4" onClick="check4()"/>
+      <font color="red"><b>Mini Hot Dog Slammer</b></font></label>
+  <br>
+	  Sauce:
+  <label for="sauce4"></label>
+      <select name="sauce4" size="1" id="sauce4">
+      <option value="select">Select</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild">Mild</option>
+        <option value="Parmesan Garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jamin Jalapeno">Jammin Jamin </option>
+        <option value="Asian Zing">Asian Zing Zing</option>
+        <option value="Caribbean Jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai Curry">Thai Curry</option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero </option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select>
+ <br>With : 
+    <label>
+      <input type="radio" name="kids_sides" value="Fruit Cup" id="kids_sides_0" />
+      Fruit Cup</label>
+    <label>
+      <input type="radio" name="kids_sides" value="Carrots" id="kids_sides_1" />
+      Carrots</label>
+    <label>
+      <input type="radio" name="kids_sides" value="French Fries" id="kids_sides_2" />
+      French fries</label>
+    <label><br><p>
+      <input type="checkbox" name="kids5" value="naked" id="kids5" onClick="check5()"/>
+      <font color="red"><b>Naked Tenders (3)</b></font></label><br>
+      Sauce:<label for="sauce5"></label>
+      <select name="sauce5" size="1" id="sauce5">
+      <option value="select">Select</option>
+        <option value="Sweet BBQ">Sweet BBQ</option>
+        <option value="Teriyaki">Teriyaki</option>
+        <option value="Mild">Mild</option>
+        <option value="Parmesan Garlic">Parmesan Garlic</option>
+        <option value="Medium">Medium</option>
+        <option value="Honey BBQ">Honey BBQ </option>
+        <option value="Spicy Garlic">Spicy Garlic</option>
+        <option value="Jamin Jalapeno">Jammin Jamin</option>
+        <option value="Asian Zing">Asian Zing Zing</option>
+        <option value="Caribbean Jerk">Caribbean Jerk</option>
+        <option value="Hot BBQ">Hot BBQ</option>
+        <option value="Thai Curry">Thai Curry </option>
+        <option value="Hot">Hot</option>
+        <option value="Mango Habanero">Mango Habanero</option>
+        <option value="Wild">Wild</option>
+        <option value="Blazin">Blazin</option>
+      </select>
+	   <br>With : 
+    <label>
+      <input type="radio" name="kids_sides" value="Fruit Cup" id="kids_sides_0" />
+      Fruit Cup</label>
+    <label>
+      <input type="radio" name="kids_sides" value="Carrots" id="kids_sides_1" />
+      Carrots</label>
+    <label>
+      <input type="radio" name="kids_sides" value="French Fries" id="kids_sides_2" />
+      French fries</label>
+    <label><br><p>
+      <input type="checkbox" name="kids6" value="mac" id="kids6" onClick="check6()"/>
+     <font color="red"><b> Macaroni & Cheese</b></font></label>
+     <br>With : 
+    <label>
+      <input type="radio" name="kids_sides" value="Fruit Cup" id="kids_sides_0" />
+      Fruit Cup</label>
+    <label>
+      <input type="radio" name="kids_sides" value="Carrots" id="kids_sides_1" />
+      Carrots</label>
+    <label>
+      <input type="radio" name="kids_sides" value="French Fries" id="kids_sides_2" />
+      French fries</label><br><p>
+    <label>
+      <input type="checkbox" name="kids7" value="corn" id="kids7" onClick="check7()"/>
+      <font color="red"><b>Mini Corn Dogs (10)</b></font></label>
+  <br>With : 
+    <label>
+      <input type="radio" name="kids_sides" value="Fruit Cup" id="kids_sides_0" />
+      Fruit Cup</label>
+    <label>
+      <input type="radio" name="kids_sides" value="Carrots" id="kids_sides_1" />
+      Carrots</label>
+    <label>
+	<input type="hidden" name="action" value="addKids">
+      <input type="radio" name="kids_sides" value="French Fries" id="kids_sides_2" />
+      French fries</label>
+  <p>
+  <input type="hidden" name="action" value="addKids">
+    <input STYLE="color: #FDD017; background-color:  #FF2400;" type="submit" name="add" id="button" value="Add to Bag"/>
+  </p>
+   <p><a href="bww_order.html" title="Back to main Menu">Back to main menu</a></p>
+  <p><br />
+  </p>
+</form>
+<p>&nbsp;</p>
+</body>
+</div>
+</html>

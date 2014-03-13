@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style rel='stylesheet' type='text/css'>
+div#heading {
+max-width: 1200px;
+height: 130px;
+background:url(images/header.png) no-repeat left;
+display:block;
+
+}
+div#container {
+    position: relative;
+    margin: 0 auto;
+	height: 610px;
+	max-width: 1200px;
+}
+div#heading {
+    margin: 10px auto -1px auto;
+}
+div#heading h1 {
+    margin: 0px;
+	float: right;
+}
+div#left {
+    margin-top: 0px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    background: white;
+    padding: 5px;
+}
+div#content {
+    margin-left: 211px;
+    background: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+div#right {
+    margin-left: 350px;
+    background: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+div#footer {
+    float: center;
+    position: relative;
+    margin: -1px auto 10px auto;
+	background: black;
+	height: 50px;
+	max-width: 1000px;
+}
+</style>
+<title>Chipotle Bowl Menu</title>
+<script type="text/javascript">
+function ValidateFormBowl(Form)
+	{
+	  function countSelections(buttonGrp)
+	  {
+	    for(i=0; i<buttonGrp.length; i++)
+		{
+		  if(buttonGrp[i].checked) 
+		     return true;
+		}
+		return false;
+	  }
+	  if(!countSelections(bowl_form.rice1))
+	  {
+	    alert("Please select one rice option");
+		return false;
+	  }
+	    if(!countSelections(bowl_form.bean1))
+	  {
+	    alert("Please select one bean option");
+		return false;
+	  }
+	  return true;
+	}
+function check() {
+
+	 var count = 0
+	 
+	 if(document.getElementById('chicken').checked)
+	 {
+	 document.getElementById('chicken_extra').disabled = false;
+	 count = count+1
+	 if(count == 3)
+	 alert('Please select any 2')
+	 }
+	 
+	 if(!(document.getElementById('chicken').checked))
+	 {
+	  document.getElementById('chicken_extra').disabled = true;
+	 }
+	 
+	 if(document.getElementById('steak').checked)
+	 {document.getElementById('steak_extra').disabled = false;
+	 count = count+1
+	 if(count == 3)
+	 alert('Please select any 2')
+	 }
+	 
+	  if(!(document.getElementById('steak').checked))
+	 {
+	  document.getElementById('steak_extra').disabled = true;
+	 }
+	 
+	 if(document.getElementById('barbacoa').checked)
+	 {document.getElementById('barbacoa_extra').disabled = false;
+	 count = count+1
+	 if(count == 3)
+	 alert('Please select any 2')
+	 }
+	 
+	  if(!(document.getElementById('barbacoa').checked))
+	 {
+	  document.getElementById('barbacoa_extra').disabled = true;
+	 }
+	 
+	 if(document.getElementById('carnitas').checked)
+	 {document.getElementById('carnitas_extra').disabled = false;
+	 count = count+1
+	 if(count == 3)
+	 alert('Please select any 2')
+	 }
+	 
+	  if(!(document.getElementById('carnitas').checked))
+	 {
+	  document.getElementById('carnitas_extra').disabled = true;
+	 }
+	 
+	 }
+	 function disable() {
+	 if(document.getElementById('veggie').checked)
+	 {
+	 document.getElementById('chicken').disabled = true;
+	 document.getElementById('steak').disabled = true;
+	 document.getElementById('barbacoa').disabled = true;
+	 document.getElementById('carnitas').disabled = true;
+	 document.getElementById('guacamole').disabled = false;
+	 }
+	  if(!document.getElementById('veggie').checked)
+	 {
+	 document.getElementById('chicken').disabled = false;
+	 document.getElementById('steak').disabled = false;
+	 document.getElementById('barbacoa').disabled = false;
+	 document.getElementById('carnitas').disabled = false;
+	 document.getElementById('guacamole').disabled = true;
+	 }
+	}
+</script>
+</head>
+<body>
+<div id="container">
+<p><h2 align="center"><font color="red">Chipotle Bowl Menu</font></h2></p>
+<!-- Bowl Form -->
+
+        <font color="red"><b>Select any 2 Bowl fillings: </b></font><br>
+         <form action="servlet/onlineController"   onSubmit="return ValidateFormBowl(this)" method=GET name="bowl_form">
+		  <input type="hidden" name="form" value="Bowl">
+           <p>Chicken (6.25)
+             <input type="checkbox" name = "chicken" value="chicken" id="chicken" onClick = "check()">
+			 Extra filling (2.05)<input type="checkbox" name="chicken_extra" value="chicken_extra" id="chicken_extra" disabled="true"><br>
+             Steak (6.65)
+             <input type="checkbox" name="steak" value="Steak" id="steak" onClick = "check()">
+			 Extra filling (2.35)<input type="checkbox" name="steak_extra" value="steak_extra" id="steak_extra" disabled="true"><br>
+             Barbacoa (6.65)
+             <input type="checkbox" name="barbacoa" value="Barbacoa" id="barbacoa" onClick = "check()">
+			 Extra filling (2.35)<input type="checkbox" name="barbaco_extra" value="barbacoa_extra" id="barbacoa_extra" disabled="true"><br>              
+             Carnitas (6.65)
+             <input  type="checkbox" name="carnitas" value="Carnitas" id="carnitas" onClick = "check()">
+			 Extra filling (2.35)<input type="checkbox" name="carnitas_extra" value="carnitas_extra" id="carnitas_extra" disabled="true"><br>
+             Veggie (6.25)
+             <input type="checkbox" name="veggie" value="veggie" id="veggie" onChange="disable()"/><br>
+			 Gaucomole
+			 <input type="checkbox" name="guacamole" value="guacomole" id="guacamole" disabled="true"/>
+           <br><br>
+             <font color="red"><b>Select any 1 rice option: </b></font><br><br>
+             <label>
+               <input type="radio" name="rice1" value="White" id="rice1_3">
+               White rice</label>
+             <label>
+               <input type="radio" name="rice1" value="Brown" id="rice1_4">
+               Brown rice</label>
+             <label>
+               <input type="radio" name="rice1" value="No" id="rice1_5">
+               No rice</label>
+             <br><br>
+           <font color="red"><b>Select any 1 bean option:</b></font><br><br>
+             <label>
+               <input type="radio" name="bean1" value="Black" id="bean1_0">
+             Black beans</label>
+             <label>
+               <input type="radio" name="bean1" value="Pinto" id="bean1_1">
+               Pinto beans (cooked with Bacon)</label>
+             <label>
+               <input type="radio" name="bean1" value="No" id="bean1_2">
+               No beans</label>
+             <br><br><br>
+             <font color="red"><b>Select any number of toppings : </b></font></strong><br><br>
+            <label>
+              <input type="checkbox" name="toppings1" value="fajita" id="toppings1_0">
+              Fajita veggies</label>
+            <br>
+            <label>
+              <input type="checkbox" name="toppings2" value="tomato" id="toppings1_1">
+              Fresh tomato salsa (mild)</label>
+            <br>
+            <label>
+              <input type="checkbox" name="toppings3" value="chili-corn" id="toppings1_2">
+              Roasted chili-corn salsa (medium)</label>
+            <br>
+            <label>
+              <input type="checkbox" name="toppings4" value="green-chili" id="toppings1_3">
+              Tomato-green chili salsa (medium)</label>
+            <br>
+            <label>
+              <input type="checkbox" name="toppings5" value="red-chili" id="toppings1_4">
+              Tomatillo-red chili salsa (hot)</label>
+            <br>
+            <label>
+              <input type="checkbox" name="toppings6" value="cream" id="toppings1_5">
+              Sour cream</label>
+            <br>
+            <label>
+              <input type="checkbox" name="toppings7" value="cheese" id="toppings1_6">
+              Cheese</label>
+            <br>
+            <label>
+              <input type="checkbox" name="toppings8" value="guacamole" id="toppings1_7">
+              Guacamole (1.8)</label>
+            <br>
+            <label>
+              <input type="checkbox" name="toppings9" value="lettuce" id="toppings1_8">
+              Lettuce</label>
+			  <br>
+			 <br>
+			 <font color="red"><b>Sides : </b></font>
+           <p>
+		      <label for="chips"></label>
+		      <select name="chips" size="1" id="chips">
+		        <option value="0">0</option>
+		        <option value="1">1</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5</option>
+		        <option value="6">6</option>
+		        <option value="7">7</option>
+		        <option value="8">8</option>
+		        <option value="9">9</option>
+		        <option value="10">10</option>
+	          </select>
+		      <label>Chips<br>
+		      </label>
+              <label for="chips_guacamole"></label>
+		      <select name="chips_guacamole" size="1" id="chips_guacamole">
+		        <option value="0">0</option>
+		        <option value="1">1</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5</option>
+		        <option value="6">6</option>
+		        <option value="7">7</option>
+		        <option value="8">8</option>
+		        <option value="9">9</option>
+		        <option value="10">10</option>
+	          </select>
+		      <label>Chips & Gaucamole</label>
+		      <br>
+               <label for="chips_fresh_tomato_salsa"></label>
+              <select name="chips_fresh_tomato_salsa" size="1" id="chips_fresh_tomato_salsa">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <label>Chips & Fresh Tomato Salsa sauce</label>
+		      <br>
+              <label for="chips_roasted_chili_corn_salsa"></label>
+		      <select name="chips_roasted_chili_corn_salsa" size="1" id="chips_roasted_chili_corn_salsa">
+		        <option value="0">0</option>
+		        <option value="1">1</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5</option>
+		        <option value="6">6</option>
+		        <option value="7">7</option>
+		        <option value="8">8</option>
+		        <option value="9">9</option>
+		        <option value="10">10</option>
+	          </select>
+		      <label>Chips & Roasted chili corn salsa sauce</label>
+		      <br>
+              <label for="chips_tomato_green_chili_salsa"></label>
+		      <select name="chips_tomato_green_chili_salsa" size="1" id="chips_tomato_green_chili_salsa">
+		        <option value="0">0</option>
+		        <option value="1">1</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5</option>
+		        <option value="6">6</option>
+		        <option value="7">7</option>
+		        <option value="8">8</option>
+		        <option value="9">9</option>
+		        <option value="10">10</option>
+	          </select>
+		      <label>Chips & Tomato Green chili salsa sauce</label>
+		      <br>
+              <label for="chips_tomato_red_chili_salsa"></label>
+		      <select name="chips_tomato_red_chili_salsa" size="1" id="chips_tomato_red_chili_salsa">
+		        <option value="0">0</option>
+		        <option value="1">1</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5</option>
+		        <option value="6">6</option>
+		        <option value="7">7</option>
+		        <option value="8">8</option>
+		        <option value="9">9</option>
+		        <option value="10">10</option>
+	          </select>
+		      <label>Chips & Tomato Red chili salsa sauce</label>
+		      <br>
+		      <br>
+		      <font color="red"><b>Drinks : </b></font>
+           <p><em>
+              <label for="water"></label>
+		      <select name="water" size="1" id="water">
+		        <option value="0">0</option>
+		        <option value="1">1</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5</option>
+		        <option value="6">6</option>
+		        <option value="7">7</option>
+		        <option value="8">8</option>
+		        <option value="9">9</option>
+		        <option value="10">10</option>
+	          </select>
+           Bottled Water</em>                      
+<p><em>Nantucket Nectar</em><br><br>
+  <label for="nectar_apple"></label>
+  <select name="nectar_apple" size="1" id="nectar_apple">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+  Apple<br>  
+   <label for="nectar_peach"></label>
+  <select name="nectar_peach" size="1" id="nectar_peach">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>                                           
+  Peach Orange<br>  
+     <label for="nectar_orange"></label>
+  <select name="nectar_orange" size="1" id="nectar_orange">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>            
+  Pineapple Orange Banana<br>
+       <label for="nectar_cherry"></label>
+  <select name="nectar_cherry" size="1" id="nectar_cherry">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select> 
+  Pomegranate Cherry           
+<p><em>Izze           </em><br><br>
+<label for="izze_Blackberry"></label>
+  <select name="izze_Blackberry" size="1" id="izze_Blackberry">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select> 
+          Blackberry<br>
+          <label for="izze_clementine"></label>
+  <select name="izze_clementine" size="1" id="izze_clementine">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select> 
+          Clementine<br>
+                 <label for="izze_grapefruit"></label>
+  <select name="izze_grapefruit" size="1" id="izze_grapefruit">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+          Grapefruit
+<p><br>
+  <input type="hidden" name="action" value="add">
+  <INPUT STYLE="color: #FDD017; background-color:  #FF2400;" TYPE=SUBMIT value="Add Order">
+</form>
+        </div>
+</body>
+</html>

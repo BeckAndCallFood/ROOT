@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en'>
+<head>
+<style rel='stylesheet' type='text/css'>
+div#container {
+    position: relative;
+    margin: 0 auto;
+	height: 610px;
+	max-width: 1200px;
+}
+</style>
+<script language="javascript">
+function ValidateForm(Form)
+	{
+	  function countSelections(buttonGrp)
+	  {
+	    for(i=0; i<buttonGrp.length; i++)
+		{
+		  if(buttonGrp[i].checked) 
+		     return true;
+		}
+		return false;
+	  }
+	  
+	  if(!countSelections(dessertForm.dessert_radio))
+	  {
+	    if(document.getElementById('desserts_1').checked) {
+	    alert("Please select one ice cream option ");
+		return false;
+		}
+		else { return true; }
+	  }
+	  
+	  return true;
+	}
+</script> 
+<title>BWW Desserts</title>
+</head>
+
+<body>
+<div id="container">
+<h2 align="center"><font color="red">Choose from You-Deserve-It Desserts</font></h2>
+
+<p>&nbsp;</p>
+<form id="form1" name="dessertForm" method=GET onSubmit="return ValidateForm(dessertForm)" action="bww/bwwController" >
+  <p>
+    <label>
+      <input type="checkbox" name="dessert1" value="cake" id="desserts_0" />
+     <font color="red"><b> Chocolate Fudge Cake</b></font></label>
+  </p>
+  <p><br />
+    <label>
+      <input type="checkbox" name="dessert2" value="ice_cream" id="desserts_1"/>
+      <font color="red"><b>Ice Cream</b></font></label>
+  </p>
+  <p>
+    <label>
+    With :   <input type="radio" name="dessert_radio" value="Chocolate" id="dessert1"/>
+      Chocolate sauce</label>
+    <label>
+      <input type="radio" name="dessert_radio" value="Caramel" id="dessert2"/>
+      Caramel</label>
+    <label>
+      <input type="radio" name="dessert_radio" value="Both" id="dessert3"/>
+      Both</label>
+    <label>
+      <input type="radio" name="dessert_radio" value="Neither" id="dessert4"/>
+      Neither </label>
+  </p>
+  <label>
+      <input type="checkbox" name="dessert3" value="ice_cream" id="desserts_2"/>
+      <font color="red"><b>Cheesecake Bites</b></font></label>
+	  <p>
+	  <label>
+      <input type="checkbox" name="dessert4" value="ice_cream" id="desserts_3"/>
+      <font color="red"><b>Cinnamon Squares</b></font></label>
+	  <p>
+	  <label>
+      <input type="checkbox" name="dessert5" value="ice_cream" id="desserts_4"/>
+      <font color="red"><b>Dessert Nachos</b></font></label><p>
+ <input type="hidden" name="action" value="addDesserts">
+    <input STYLE="color: #FDD017; background-color:  #FF2400;" type="submit" id="button" value="Add to Bag"/>
+	</form>
+  </p>
+    <p><a href="bww_order.html" title="Back to main Menu">Back to main menu</a></p>
+    <br />
+  </p>
+
+<p>&nbsp;</p>
+</body>
+</div>
+</html>

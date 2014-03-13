@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en'>
+<head>
+        <title>Order Now</title>
+        <style rel='stylesheet' type='text/css'>
+div#heading {
+width: 1000px;
+height: 130px;
+background:url(images/header.png) no-repeat top center;
+display:block;
+}
+div#container,
+div#footer {
+    border: 1px white;
+    max-width: 1000px;
+    min-width: 600px;
+}
+div#container {
+    position: relative;
+    margin: 0 auto;
+	height: 500px;
+}
+div#heading {
+    margin: 10px auto -1px auto;
+}
+div#heading h1 {
+    margin: 5px;
+}
+div#left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    background: #ccc;
+    padding: 5px;
+    border-right: 1px solid black;
+}
+div#content {
+    margin-left: 211px;
+    background: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+div#footer {
+    margin: -1px auto 10px auto;
+}
+div#footer p {
+    margin: 5px;
+}        
+        </style>
+    </head>
+    <body>
+        <div id='container'>
+            <font color="red"> <h2 align="center">Edit User details</h2>
+			<h3><b>Enter fields to be edited</h3></b>
+			<form id="infoForm" method=GET action="user/userController">
+			<input type="hidden" name="form" value="editForm">
+			 <label for="Name">Name</label>
+            <input STYLE="color: #000000; background-color:  #FFDB58;" id="Name" name="name" type="text" /><br><br>
+            <label for="no">Contact No</label>
+            <input STYLE="color: #000000; background-color:  #FFDB58;" id="no" name="no" type="text" /><br><br>
+            <label for="email">Email</label>
+            <input STYLE="color: #000000; background-color:  #FFDB58;" id="email" name="email" type="text" /><br><br>
+			 <label for="location">Location</label>
+            <select STYLE="color: #000000; background-color:  #FFDB58;" name="location" name="location" size="1" id="location"><br><br>
+	  <option value="select">select</option>
+      <option value="Christiana Towers - East">Christiana Towers - East</option>
+      <option value="Christiana Towers - East">Christiana Towers - West</option>
+	  </select><br><br><p> </font>
+	<input type="hidden" name="type" value="edit">
+ <input STYLE="color: #FDD017; background-color:  #FF2400;" type="submit" value="Edit">
+	</form>
+            
+        </div>
+    </body>
+</html>

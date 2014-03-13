@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style rel='stylesheet' type='text/css'>
+div#container {
+    position: relative;
+    margin: 0 auto;
+	height: 610px;
+	max-width: 1200px;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>BWW Admin page</title>
+</head>
+
+<body>
+<div id="container">
+<p><h3><font color="red"><b>Buffalo Wild Wings Menu Admin Page</b></font></h3></p>
+<p><strong><em>Select any item, whose price needs to be changed, fromt the drop down list.</em></strong></p>
+<p><em><strong>Enter the new price in the box given.</strong></em><strong></strong></p>
+<p>&nbsp;</p>
+
+<p><strong>Sharables: </strong></p>
+<form id="form1" name="form1" method="post" action="bww_admin.jsp">
+  <p>
+    <label for="Sharables"></label>
+    <select name="sharables" size="1" id="sharables">
+      <option value="select">Select </option>
+      <option value="nachos">Nachos </option>
+      <option value="nachos_chicken">Chicken Nachos</option>
+      <option value="cheeseburger_slammers">Cheeseburger Slammers</option>
+      <option value="pork_slammers">Pork Slammers</option>
+      <option value="chicken_tender_slammers">Chicken Tender Slammers</option>
+      <option value="sliced_steak_slammers">Sliced Steak Slammers</option>
+      <option value="mini_beef_dog_slammers">Mini Beef Dog Slammers</option>
+      <option value="mini_beef_dog_slammers_ccsauce">Mini Beef Dog Slammers with chili n cheese</option>
+      <option value="fried_pcikles">Fried Pickles</option>
+       <option value="the_sampler">The Sampler </option>
+      <option value="tablegating_sampler">Tablegating Sampler </option>
+      <option value="mozzarrela_sticks">Mozzarrela Sticks</option>
+      <option value="chips_salsa">Chips n Salsa</option>
+      <option value="chili_con_queso_dip">Chili corn queso dip</option>
+      <option value="pretzels">Pretzels</option>
+      <option value="chicken_quesadilla">Chicken Quesadilla</option>
+      <option value="roasted_garlic_mushrooms">Roasted Garlic Mushrooms</option>
+      <option value="mini_corn_dogs">Mini Corn Dogs</option>
+      <option value="spinach_artichoke_dip">Spinach Artichoke dip</option>
+      <option value="jalapeno_pepper_bites">Jalapeno Pepper Bites</option>
+	   <option value="molten_dip">Molten Dip</option>
+    </select>
+  </p>
+  <p>Enter new Price :
+    <label for="price"></label>
+    <input type="text" name="price1" id="price1" />
+  </p>
+<p><strong>Sides : </strong></p>
+  <p>
+    <label for="sides"></label>
+    <select name="sides" size="1" id="sides">
+      <option value="select">Select </option>
+      <option value="potato_wedges_basket"> Potato wedges basket</option>
+      <option value="potato_wedges_basket_c">Potato wedges basket with cheese</option>
+      <option value="potato_wedges_regular">Potato wedges regular</option>
+      <option value="potato_wedges_regular_c">Potato wedges regular with cheese</option>
+      <option value="onion_rings">Onion rings</option>
+      <option value="onion_rings_basket">Onion rings basket</option>
+      <option value="french_fries">French fries</option>
+      <option value="french_fries_basket">French fries basket</option>
+      <option value="buffalo_chips_basket">Buffalo chips basket</option>
+      <option value="buffalo_chips_basket_c">Buffalo chips basket with cheese</option>
+      <option value="buffalo_chips_regular">Buffalo chips regular</option>
+      <option value="buffalo_chips_regular_c">Buffalo chips regular with cheese</option>
+      <option value="side_salad">Side salad</option>
+      <option value="coleslaw">Coleslaw</option>
+      <option value="mac_cheese">Mac n cheese</option>
+      <option value="veggie_boat">Veggie boat</option>
+    </select>
+  </p>
+  <p>Enter new Price :
+    <label for="price2"></label>
+    <input type="text" name="price2" id="price2" />
+  </p>
+  <p><strong>Salads : </strong></p>
+<p>
+  <label for="salads"></label>
+  <select name="salads" size="1" id="salads">
+    <option value="select">Select </option>
+    <option value="honey_bbq_chicken">Honey BBQ chicken</option>
+    <option value="chicken_caesar">Chicken caesar</option>
+    <option value="grilled_chicken_wo">Grilled chicken (without chicken)</option>
+    <option value="grilled_chicen">Griled chicken</option>
+    <option value="grilled_chicken_blackened">Grilled chicken blackened</option>
+    <option value="asian_zing">Asian Zing</option>
+    <option value="chicken_tender">Chicken tender</option>
+	 <option value="chicken_chop">Chicken Chop</option>
+  </select>
+</p>
+<p>Enter new Price :
+  <label for="price3"></label>
+  <input type="text" name="price3" id="price3" />
+</p>
+<p><strong>Traditional Wings : </strong></p>
+<p>
+  <label for="hand-spun"></label>
+  <select name="hand-spun" size="1" id="hand-spun">
+    <option value="select">Select </option>
+    <option value="5">5</option>
+    <option value="10">10</option>
+    <option value="15">15</option>
+    <option value="20">20</option>
+    <option value="25">25</option>
+    <option value="50">50</option>
+  </select>
+</p>
+<p>Enter new Price :
+  <label for="price4"></label>
+  <input type="text" name="price4" id="price4" />
+</p>
+<p><strong>Boneless : </strong></p>
+<p>
+  <label for="boneless"></label>
+  <select name="boneless" size="1" id="boneless">
+    <option value="select">Select </option>
+    <option value="5">5</option>
+    <option value="10">10</option>
+    <option value="15">15</option>
+    <option value="20">20</option>
+    <option value="25">25</option>
+    <option value="50">50</option>
+  </select>
+</p>
+<p>Enter new Price :
+  <label for="price5"></label>
+  <input type="text" name="price5" id="price5" />
+</p>
+<p><strong>Boneless &amp; Traditional wings combo </strong></p>
+<p>Enter new Price :
+  <label for="price6"></label>
+  <input type="text" name="price6" id="price6" />
+</p>
+<p><strong>Tenders &amp; Shrimps :</strong></p>
+<p>
+  <label for="tenders"></label>
+  <select name="tenders" size="1" id="tenders">
+    <option value="select">Select </option>
+    <option value="4_naked">4 Naked tenders</option>
+    <option value="6_naked">6 Naked tenders</option>
+    <option value="4_chicken">4 Chicken tenders</option>
+    <option value="6_chicken">6 Chicken tenders</option>
+    <option value="popcorn_shrimp">Popcorn Shrimp</option>
+    <option value="tenders_shrimp">Tenders &amp; Shrimp</option>
+  </select>
+</p>
+<p>Enter new Price :
+  <label for="price7"></label>
+  <input type="text" name="price7" id="price7" />
+</p>
+<p><strong>Wraps :</strong></p>
+<p>
+  <label for="wraps"></label>
+  <select name="wraps" size="1" id="wraps">
+  <option value="select">Select </option>
+    <option value="chicken">Chicken Wrap</option>
+    <option value="chicken_southwest">Southwest Ckn. Queso Wrap</option>
+    <option value="chicken_ranch">Buffalo ranch chicken wrap</option>
+    <option value="steak">Pepper Jack Steak Wrap</option>
+    <option value="fish">2 Fish Tacos</option>
+    <option value="buffalitos">2 Grilled Chicken Buffalitos</option>
+  </select>
+</p>
+<p>Enter new Price :
+  <label for="price8"></label>
+  <input type="text" name="price8" id="price8" />
+</p>
+<p><strong>Burgers : </strong></p>
+<p>
+  <label for="burgers"></label>
+  <select name="burgers" size="1" id="burgers">
+  <option value="select">Select </option>
+    <option value="black_bleu">Black n Bleu burger</option>
+    <option value="jack_daddy">Big Jack Daddy burger</option>
+    <option value="nacho">Screamin' Nacho burger</option>
+    <option value="steak">Juicy Steak burger</option>
+    <option value="own">Build your own burger</option>
+    <option value="black_bean">Black bean patty</option>
+  </select>
+</p>
+<p>Enter new Price :
+  <label for="price9"></label>
+  <input type="text" name="price9" id="price9" />
+</p>
+<p><strong>Additions :</strong></p>
+<p>
+  <label for="additions"></label>
+  <select name="additions" size="1" id="additions">
+   <option value="select">Select </option>
+    <option value="baccon">Baccon</option>
+    <option value="chili">Chili</option>
+    <option value="pork">Pork</option>
+    <option value="steak">Steak </option>
+  </select>
+</p>
+<p>Enter new Price :
+  <label for="price10"></label>
+  <input type="text" name="price10" id="price10" />
+</p>
+<p><strong>Satisfying Sandwiches : </strong></p>
+<p>
+  <label for="sandwiches"></label>
+  <select name="sandwiches" size="1" id="sandwiches">
+  <option value="select">Select </option>
+    <option value="buffalo_ranch">Buffalo Ranch chicken </option>
+    <option value="jerk_chicken">Jerk chicken</option>
+    <option value="pork">Pulled Pork</option>
+    <option value="chicken">Chicken</option>
+  </select>
+</p>
+<p>Enter new Price :
+  <label for="price11"></label>
+  <input type="text" name="price11" id="price11" />
+</p>
+<p><strong>Wild Flatbreads :</strong></p>
+<p>
+  <label for="flatbreads"></label>
+  <select name="flatbreads" size="1" id="flatbreads">
+  <option value="select">Select </option>
+    <option value="garlic">Parmesan Garlic Ckn. Flatbread</option>
+    <option value="buffalo_chicken">Buffalo Chicken Flatbread</option>
+    <option value="spinach_artichoke">Spinach Artichoke Ckn. Flatbread</option>
+	 <option value="italian_pepperoni">Italian Pepperoni</option>
+  </select>
+</p>
+<p>Enter new Price :
+  <label for="price12"></label>
+  <input type="text" name="price12" id="price12" />
+</p>
+<p><strong>You-Deserve-It Desserts :</strong></p>
+<p>
+  <label for="desserts"></label>
+  <select name="desserts" size="1" id="desserts">
+  <option value="select">Select </option>
+    <option value="choc_fudge_cake">Chocolate Fudge Cake</option>
+    <option value="ice_cream">Ice cream</option>
+	<option value="cheesecake_bites">Cheesecake Bites</option>
+	<option value="cinnamon_squares">Cinnamon squares</option>
+	<option value="dessert_nachos">Dessert Nachos</option>
+  </select>
+</p>
+<p>Enter new Price :
+  <label for="price13"></label>
+  <input type="text" name="price13" id="price13" />
+</p>
+<p><strong>Drinks : </strong></p>
+<p>
+  <label for="drinks"></label>
+  <select name="drinks" size="1" id="drinks">
+  <option value="select">Select </option>
+    <option value="drink_20">drink (20 oz.)</option>
+    <option value="drink_30">drink (30 oz.)</option>
+    <option value="coffee">Coffee</option>
+  </select>
+</p>
+<p>Enter new Price :
+  <label for="price14"></label>
+  <input type="text" name="price14" id="price14" />
+</p>
+<p><strong>Kids' Meals :</strong></p>
+<p>
+  <label for="kids"></label>
+  <select name="kids" size="1" id="kids">
+  <option value="select">Select </option>
+    <option value="cheeseburger_slammer">Cheeseburger Slammer</option>
+    <option value="boneless_wings">Boneless Wings</option>
+    <option value="traditional_wings">Traditional Wings</option>
+    <option value="chicken_tenders">Chicken Tenders</option>
+    <option value="hot_dog_slammer">Mini Hot Dog Slammer</option>
+    <option value="naked_tenders">Naked Tenders</option>
+    <option value="mac_cheese">Macroni &amp; Cheese</option>
+    <option value="corn_dogs">Mini Corn Dogs</option>
+  </select>
+</p>
+<p>Enter new Price :
+  <label for="price15"></label>
+  <input type="text" name="price15" id="price15" />
+</p>
+<p><strong>Substitutes :</strong></p>
+<p>
+  <label for="substitutes"></label>
+  <select name="substitutes" size="1" id="substitutes">
+  <option value="select">Select </option>
+    <option value="Onion Rings">Onion rings</option>
+    <option value="Side Salad">Side Salad</option>
+    <option value="ColeSlaw">ColeSlaw</option>
+    <option value="Veggie Boat">Veggie Boat</option>
+    <option value="Buffalo Chips">Buffalo Chips</option>
+    <option value="Potato Wedges">Potato Wedges</option>
+  </select>
+</p>
+<p>Enter new Price :
+  <label for="price16"></label>
+  <input type="text" name="price16" id="price16" />
+</p>
+<p>
+    <input type="submit" name="submit" id="submit" value="Submit" />
+  </p>
+</form>
+<p>&nbsp;</p>
+</div>
+</body>
+</html>

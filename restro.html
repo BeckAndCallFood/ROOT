@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en'>
+<head>
+<script type="text/javascript">
+function check() {
+var radio = document.getElementsByName('radio1');
+if(document.getElementById('radio1').checked)
+{return true;}
+else if(document.getElementById('radio2').checked)
+{return true;}
+else{
+alert('select one option');
+	return false; 
+}
+/*for(var i=0;i<=radio.length;i++)
+  {
+    if(radio[i].checked) {
+	return true;
+	}
+	else {
+	alert('select one option');
+	return false; 
+	     }
+  }*/
+}
+</script>
+<title>Order Now</title>
+<style rel='stylesheet' type='text/css'>
+div#heading,
+div#container,
+div#footer {
+    border: 1px solid black;
+    max-width: 1000px;
+    min-width: 600px;
+}
+div#container {
+    position: relative;
+    margin: 0 auto;
+	height: 500px;
+}
+div#heading {
+    margin: 10px auto -1px auto;
+}
+div#heading h1 {
+    margin: 5px;
+}
+div#left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    background: #ccc;
+    padding: 5px;
+    border-right: 1px solid black;
+}
+div#content {
+    margin-left: 211px;
+    background: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+div#footer {
+    margin: -1px auto 10px auto;
+}
+div#footer p {
+    margin: 5px;
+}        
+        #container h2 {
+	color: #98232F;
+}
+#container #restroForm label {
+	color: #C42E1C;
+}
+</style>
+    </head>
+    <body>
+        <div id='container'>
+            <p>&nbsp;</p>
+            <h2 align="center"><font color="red">Choose Restaurant </font></h2>
+            <form id="restroForm" method=GET action="user/userController">	
+	  
+	&nbsp;<img src="images/Chipotle.jpg" width="80" height="80" border="0"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img src="images/BWW.jpg" width="80" height="80" border="0" /> <br>
+	<label>
+    <input type="radio" name="radio1" value="chipotle" id="radio1" />
+    Chipotle</label>&nbsp;&nbsp;
+	 <label>
+    <input type="radio" name="radio1" value="BWW" id="radio2" />
+    BWW</label>
+	  </select><br>
+	  <p>
+	  <input STYLE="color: #FDD017; background-color:  #FF2400;" id="next" type="submit" value="Next" onClick="return check()"/>
+	</form>
+            
+        </div>
+    </body>
+</html>
